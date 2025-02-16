@@ -61,18 +61,20 @@ public class CardBuild
             case <= 12:
                 type = CardType.Attack;
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerAttack, ability);
-                name = "AttackCard";
                 break;
             case <= 25:
                 type = CardType.Defense;
+                ability.AbilityStates = number;
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerDefense, ability);
                 break;
             case <= 38:
                 type = CardType.Recovery;
+                ability.AbilityStates = number;
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerRecovery, ability);
                 break;
             case <= 51:
                 type = CardType.Buff;
+                ability.AbilityStates = number;
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerBuff, ability);
                 break;
         }
@@ -81,6 +83,6 @@ public class CardBuild
 
     public Card Build()
     {
-        return new Card(image, type, ability,name);
+        return new Card(image, type, ability, name);
     }
 }

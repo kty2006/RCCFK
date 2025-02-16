@@ -13,6 +13,9 @@ public enum EnumType
     PlayerRecovery,
     PlayerBuff,
     PlayerSpecial,
+    PlayerStatesUi,
+    PlayerStatesSet,
+
     EnemyTurnAdd,
     EnemyTurnRemove,
     EnemyTurnSystem,
@@ -21,6 +24,9 @@ public enum EnumType
     EnemyRecovery,
     EnemyBuff,
     EnemySpecial,
+    EnemyStatesUi,
+    EnemyStatesSet,
+
     BattleUI,
     TurnAdd,
     TurnRmove,

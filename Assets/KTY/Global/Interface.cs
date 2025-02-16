@@ -22,6 +22,7 @@ public interface UnitBehaviour
 public class AbillityWrapper
 {
     public Action AbillityFunc;
+    public float AbilityStates;
 }
 
 public interface IAttack : UnitBehaviour

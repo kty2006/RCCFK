@@ -12,21 +12,14 @@ public class Enemy : Unit
         Local.EventHandler.Register<AbillityWrapper>(EnumType.EnemyBuff, (unit) => { SetUnitBuff(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.EnemySpecial, (unit) => { SetUnitSpecial(unit); });
     }
-    public override void Die()
-    {
-        throw new NotImplementedException();
-    }
-}
 
-public class EnemySkill : IAttack, IEvent
-{
-    public void Execute()
+    public override void StatesUiSet()
     {
-        throw new NotImplementedException();
+        Local.EventHandler.Invoke<States>(EnumType.EnemyStatesUi, UnitStates);
     }
 
-    public virtual void Invoke()
+    protected override void Die()
     {
-        Debug.Log("Àû°ø°Ý");
+        throw new NotImplementedException();
     }
 }

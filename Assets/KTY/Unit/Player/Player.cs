@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class Player : Unit
 {
-    public override void Awake()
+    public void Awake()
     {
-        base.Awake();
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerAttack, (unit) => { SetUnitAttack(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerDefense, (unit) => { SetUnitDefense(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerRecovery, (unit) => { SetUnitRecovery(unit); });
@@ -13,8 +12,12 @@ public class Player : Unit
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerSpecial, (unit) => { SetUnitSpecial(unit); });
     }
 
-    
-    public override void Die()
+    public override void StatesUiSet()
+    {
+        Local.EventHandler.Invoke<States>(EnumType.PlayerStatesUi, UnitStates);
+    }
+
+    protected override void Die()
     {
         throw new NotImplementedException();
     }

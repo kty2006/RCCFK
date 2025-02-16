@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: dce280ced5e006c4cb0eb0fab2f51b75
+guid: f95c96d798bb3b14c8087b88ad5c9f5d
 AssetOrigin:
   serializedVersion: 1
   productId: 65284
   packageName: RPG Character Mecanim Animation Pack FREE
   packageVersion: 2.5.2
-  assetPath: Assets/ExplosiveLLC/RPG Character Mecanim Animation Pack FREE/Animations/2Hand-Sword/RPG-Character@2Hand-Sword-Attack1.FBX
+  assetPath: Assets/ExplosiveLLC/RPG Character Mecanim Animation Pack FREE/Animations/2Hand-Sword/RPG-Character@2Hand-Sword-Unsheath-Back-Unarmed.FBX
   uploadId: 586175
 ModelImporter:
   serializedVersion: 22200
@@ -324,7 +324,7 @@ ModelImporter:
     second: RPG-Character-Mesh
   - first:
       1: 100208
-    second: 2Hand-Sword
+    second: Box001
   - first:
       1: 100210
     second: Exporter
@@ -642,7 +642,7 @@ ModelImporter:
     second: RPG-Character-Mesh
   - first:
       4: 400208
-    second: 2Hand-Sword
+    second: Box001
   - first:
       4: 400210
     second: Exporter
@@ -663,7 +663,7 @@ ModelImporter:
     second: USP
   - first:
       23: 2300010
-    second: 2Hand-Sword
+    second: Box001
   - first:
       33: 3300000
     second: Mesh_Soldier_A
@@ -681,7 +681,7 @@ ModelImporter:
     second: USP
   - first:
       33: 3300010
-    second: 2Hand-Sword
+    second: Box001
   - first:
       43: 4300000
     second: Mesh_Soldier_A
@@ -705,10 +705,10 @@ ModelImporter:
     second: RPG-Character-Mesh
   - first:
       43: 4300014
-    second: 2Hand-Sword
+    second: Box001
   - first:
       74: 7400000
-    second: 2Hand-Sword-Attack1
+    second: 2Hand-Sword-Unsheath-Back-Unarmed
   - first:
       95: 9500000
     second: //RootNode
@@ -755,11 +755,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: 2Hand-Sword-Attack1
+      name: 2Hand-Sword-Unsheath-Back-Unarmed
       takeName: Take 001
       internalID: 7400000
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -770,7 +770,7 @@ ModelImporter:
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 0
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 1
@@ -779,17 +779,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.4217231
+      - time: 0.36280125
         functionName: ToIdle
         data: 
-        objectReferenceParameter: {fileID: 3532148859169910143, guid: f8d9e015925d4c0468b21c2d11a6e83a, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.4974227
-        functionName: StartAction
-        data: 
-        objectReferenceParameter: {fileID: 3532148859169910143, guid: f8d9e015925d4c0468b21c2d11a6e83a, type: 3}
+        objectReferenceParameter: {fileID: 11500000, guid: 8b0babd295233614b9ce053c235df888, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

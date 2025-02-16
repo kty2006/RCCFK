@@ -1,24 +1,30 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
-public struct States
+public class States
 {
-    public float Lv;
-    public float Attack { get; set; }
-    public float Defense { get; set; }
-    public float Hp { get; set; }
+    [field: SerializeField] public float Lv { get; set; }
+    [field: SerializeField] public float Attack { get; set; }
+    [field: SerializeField] public float MaxDefense { get; set; }
+    [field: SerializeField] public float Defense { get; set; }
+    [field: SerializeField] public float MaxHp { get; set; }
+    [field: SerializeField] public float Hp { get; set; }
     [field: SerializeField] public float speed { get; set; }
 }
 public abstract class Unit : MonoBehaviour
 {
-    [field: SerializeField] public States UnitStates { get; private set; }
+    public States UnitStates;
+    public Unit TargetStates;
     [field: SerializeField] public Animator animator { get; private set; }
 
     public Action actionType { get; set; }
-    public virtual void Awake()
-    {
 
+    protected Action<States> StatesSetFunc { get; set; }
+    public virtual void Start()
+    {
+        StatesUiSet();
     }
 
     public void ToIdle()
@@ -26,116 +32,120 @@ public abstract class Unit : MonoBehaviour
         animator.SetTrigger("ToIdle");
     }
 
-    public abstract void Die();
+    protected abstract void Die();
+    public abstract void StatesUiSet();
 
-    public void StartAction()
+    protected void StartAction()
     {
         actionType?.Invoke();
     }
 
-    public void SetUnitAttack(AbillityWrapper unitBehaviour)
+    protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
         unitBehaviour.AbillityFunc += new Attack(this).Invoke;
     }
 
-    public void SetUnitDefense(AbillityWrapper unitBehaviour)
+    protected void SetUnitDefense(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new Defense(this).Invoke;
+        unitBehaviour.AbillityFunc = new Defense(this, unitBehaviour.AbilityStates).Invoke;
     }
 
-    public void SetUnitRecovery(AbillityWrapper unitBehaviour)
+    protected void SetUnitRecovery(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new Recovery(this).Invoke;
+        unitBehaviour.AbillityFunc = new Recovery(this, unitBehaviour.AbilityStates).Invoke;
     }
 
-    public void SetUnitBuff(AbillityWrapper unitBehaviour)
+    protected void SetUnitBuff(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new Buff(this).Invoke;
+        unitBehaviour.AbillityFunc = new Buff(this, unitBehaviour.AbilityStates).Invoke;
     }
 
-    public void SetUnitSpecial(AbillityWrapper unitBehaviour)
+    protected void SetUnitSpecial(AbillityWrapper unitBehaviour)
     {
         unitBehaviour.AbillityFunc = new Special(this).Invoke;
     }
 }
 public class Attack : IAttack
 {
-    public Unit Unit;
-
+    private Unit Unit;
     public Attack(Unit unit)
     {
         Unit = unit;
     }
     public void Invoke()
     {
-
         Unit.animator.SetTrigger("Attack");
-        Unit.actionType = (() => { Debug.Log($"공격{Unit.name}"); });
-    }
-
-    public void Atting()
-    {
-        Debug.Log($"공격{Unit.name}");
+        Unit.actionType = (() =>
+        {
+            Unit.TargetStates.UnitStates.Hp -= Unit.UnitStates.Attack;
+            Unit.TargetStates.animator.SetTrigger("Hit");
+            Unit.TargetStates.StatesUiSet();
+        });
     }
 }
 
-public class Defense : IDefense, IEvent
+public class Defense : IDefense
 {
     public Unit Unit;
-
-    public Defense(Unit unit)
+    public float States;
+    public Defense(Unit unit, float states)
     {
         Unit = unit;
-    }
-
-    public void Execute()
-    {
-        throw new NotImplementedException();
+        States = states;
     }
 
     public void Invoke()
     {
-        Debug.Log($"방어{Unit.name}");
+        Unit.animator.SetTrigger("Defense");
+        Unit.actionType = (() =>
+        {
+            Unit.TargetStates.UnitStates.Defense += States;
+            Unit.TargetStates.StatesUiSet();
+            Debug.Log($"방어력회복{Unit.name}");
+        });
     }
 }
 
-public class Recovery : IRecovery, IEvent
+public class Recovery : IRecovery
 {
     public Unit Unit;
-
-    public Recovery(Unit unit)
+    public float States;
+    public Recovery(Unit unit, float states)
     {
         Unit = unit;
+        States = states;
     }
 
-    public void Execute()
+
+    public void Invoke()
     {
-        throw new NotImplementedException();
+        Unit.animator.SetTrigger("Defense");
+        Unit.actionType = (() =>
+        {
+            Unit.TargetStates.UnitStates.Hp += States;
+            Debug.Log($"회복{Unit.name}");
+        });
+    }
+}
+
+public class Buff : IBuff
+{
+    public Unit Unit;
+    public float States;
+    public Buff(Unit unit, float states)
+    {
+        Unit = unit;
+        States = states;
     }
 
     public void Invoke()
     {
-        Debug.Log($"회복{Unit.name}");
-    }
-}
-
-public class Buff : IBuff, IEvent
-{
-    public Unit Unit;
-
-    public Buff(Unit unit)
-    {
-        Unit = unit;
-    }
-
-    public void Execute()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Invoke()
-    {
-        Debug.Log($"스텟강화{Unit.name}");
+        Unit.animator.SetTrigger("Buff");
+        Unit.actionType = (() =>
+        {
+            Unit.TargetStates.UnitStates.Hp += States;
+            Debug.Log($"스텟강화{Unit.name}");
+        });
     }
 }
 

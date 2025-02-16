@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public  class BattleManager : MonoBehaviour
+public class BattleManager : MonoBehaviour
 {
     // 타겟 찾기//완료
     public Unit Player;
@@ -30,6 +30,8 @@ public  class BattleManager : MonoBehaviour
 
     public void GetTurn()
     {
+        Player.TargetStates = Enemy;
+        Enemy.TargetStates = Player;
         if (NextUnit == Player)
         {
             Local.EventHandler.Invoke<Turn>(EnumType.PlayerTurnSystem, Turn.TurnSystem);

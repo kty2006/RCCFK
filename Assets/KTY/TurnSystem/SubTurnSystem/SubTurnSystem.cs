@@ -15,7 +15,6 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
     public bool Invoke()//액션 실행
     {
         Inside().Forget();
-        Debug.Log("시잣");
         return turnEnd;
     }
 
@@ -25,8 +24,10 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
         {
             TurnAction?.Invoke();
             TurnAction = null;
+
             await UniTask.WaitUntil(() => TurnAction != null);
         }
+        Debug.Log("끝");
     }
     public void Register(Action ActionType)//액션 할당
     {
