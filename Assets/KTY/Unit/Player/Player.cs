@@ -19,7 +19,7 @@ public class Player : Unit
 
     protected override void Die()
     {
-        throw new NotImplementedException();
+        Debug.Log("플레이어죽음");
     }
 }
 

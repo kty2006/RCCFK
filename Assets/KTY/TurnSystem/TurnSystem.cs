@@ -33,8 +33,7 @@ public class TurnSystem
                 turns[i].Invoke();
             }
             //turns.Clear();
-            TurnStart(false);
-            Debug.Log("ео а╬╥А");
+            //TurnStart(false);
         }
     }
 

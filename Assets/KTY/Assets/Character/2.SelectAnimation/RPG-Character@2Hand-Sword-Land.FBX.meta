@@ -782,15 +782,15 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0
-        functionName: Land
+      - time: 0.3273196
+        functionName: ToIdle
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11500000, guid: 8b0babd295233614b9ce053c235df888, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.3273196
-        functionName: ToIdle
+      - time: 0.4974227
+        functionName: StartAction
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 8b0babd295233614b9ce053c235df888, type: 3}
         floatParameter: 0

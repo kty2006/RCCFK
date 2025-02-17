@@ -14,6 +14,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
     public GameObject cardPrefab;
     public float Spaceing;
     private Vector3[] CardsPos = new Vector3[8];
+    private int cardIndex;
 
     public void Start()
     {
@@ -28,13 +29,14 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         int currentCount = count;
         for (int i = 0; i < currentCount; i++)
         {
-            if (InGameData.CardDBContains(i))
+            if (InGameData.CardDBContains(cardIndex))
             {
                 GameObject cardObject = Instantiate(cardPrefab, cards.transform);
-                cardObject.transform.GetChild(0).GetComponent<Image>().sprite = CardsData.PlayingCards[i]; //Ä¸½¶È­ ÇØ¾ßÇÔ***
-                InGameData.CardsAdd(new CardBuild().Image(cardObject.GetComponent<Image>()).Type(i).Build());
-                InGameData.CardDBReMove(i);
+                cardObject.transform.GetChild(0).GetComponent<Image>().sprite = CardsData.PlayingCards[cardIndex]; //Ä¸½¶È­ ÇØ¾ßÇÔ***
+                InGameData.CardsAdd(new CardBuild().Image(cardObject.GetComponent<Image>()).Type(cardIndex).Build());
+                InGameData.CardDBReMove(cardIndex);
                 InGameData.DeckAdd(cardObject);
+                cardIndex += 1;
             }
             else
             {
@@ -106,7 +108,8 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
                 CardAni(clickedObject).Forget();
                 Local.EventHandler.Invoke<Action>(EnumType.PlayerTurnAdd, card.Ability.AbillityFunc);
                 InGameData.DeckUiReMove(clickedObject);
-                CardsSort();
+                CardDrow(1);
+
             }
         }
     }

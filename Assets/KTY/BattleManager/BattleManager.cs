@@ -11,10 +11,12 @@ public class BattleManager : MonoBehaviour
     public void Start()
     {
         StartBattle();
-        Local.EventHandler.Register<TurnAdd>(EnumType.TurnAdd, (turnAdd) => { GetTurn(); });
+        Local.EventHandler.Register<UnitDead>(EnumType.EnemyDie, (unitDead) => { StartBattle(); });
+        //Local.EventHandler.Register<TurnAdd>(EnumType.TurnAdd, (turnAdd) => { GetTurn(); });
     }
     public void StartBattle()
     {
+        Enemy = EnemyFactory.CurrentGameObject;
         if (Player.UnitStates.speed > Enemy.UnitStates.speed)
         {
             NextUnit = Player;

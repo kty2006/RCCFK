@@ -14,7 +14,7 @@ public enum EnumType
     PlayerBuff,
     PlayerSpecial,
     PlayerStatesUi,
-    PlayerStatesSet,
+    PlayerDie,
 
     EnemyTurnAdd,
     EnemyTurnRemove,
@@ -25,7 +25,8 @@ public enum EnumType
     EnemyBuff,
     EnemySpecial,
     EnemyStatesUi,
-    EnemyStatesSet,
+    EnemyDie,
+    EnemyTurnSelect,
 
     BattleUI,
     TurnAdd,
@@ -33,6 +34,8 @@ public enum EnumType
 }
 public enum Turn { TurnSystem }
 public enum TurnAdd { TurnSystem }
+public enum UnitDead { UnitDead }
+public enum EnemyTurnSelect { EnemyTurnSelect }
 
 public class EventHandler
 {

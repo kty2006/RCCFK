@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class EnemyFactory : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject EnemyModel;
+    public Transform CenterPos;
+    public static Unit CurrentGameObject;
+    public void Awake()
     {
-        
+        Local.EventHandler.Register<UnitDead>(EnumType.EnemyDie, (unitDead) => { CreateEnum(); });
+        CreateEnum();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void CreateEnum()
     {
-        
+        Instantiate(EnemyModel, CenterPos.position, CenterPos.rotation).gameObject.transform.GetChild(0).TryGetComponent(out Unit unit);
+        CurrentGameObject = unit;
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,21 +11,26 @@ public class States
     [field: SerializeField] public float MaxDefense { get; set; }
     [field: SerializeField] public float Defense { get; set; }
     [field: SerializeField] public float MaxHp { get; set; }
-    [field: SerializeField] public float Hp { get; set; }
+    public float hp;
+    public float Hp { get { return hp; } set { hp = value; if (hp <= 0) { DeadFunc?.Invoke(); } } }
+    //public float Hp { get; set; }
     [field: SerializeField] public float speed { get; set; }
+
+    public Action DeadFunc;
 }
 public abstract class Unit : MonoBehaviour
 {
     public States UnitStates;
     public Unit TargetStates;
-    [field: SerializeField] public Animator animator { get; private set; }
 
     public Action actionType { get; set; }
+    [field: SerializeField] public Animator animator { get; private set; }
 
     protected Action<States> StatesSetFunc { get; set; }
     public virtual void Start()
     {
         StatesUiSet();
+        UnitStates.DeadFunc = Die;
     }
 
     public void ToIdle()
@@ -33,6 +39,7 @@ public abstract class Unit : MonoBehaviour
     }
 
     protected abstract void Die();
+
     public abstract void StatesUiSet();
 
     protected void StartAction()
@@ -42,7 +49,7 @@ public abstract class Unit : MonoBehaviour
 
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc += new Attack(this).Invoke;
+        unitBehaviour.AbillityFunc = new Attack(this).Invoke;
     }
 
     protected void SetUnitDefense(AbillityWrapper unitBehaviour)
@@ -79,6 +86,7 @@ public class Attack : IAttack
         {
             Unit.TargetStates.UnitStates.Hp -= Unit.UnitStates.Attack;
             Unit.TargetStates.animator.SetTrigger("Hit");
+            Debug.Log($"공격{Unit.name}");
             Unit.TargetStates.StatesUiSet();
         });
     }
@@ -99,8 +107,8 @@ public class Defense : IDefense
         Unit.animator.SetTrigger("Defense");
         Unit.actionType = (() =>
         {
-            Unit.TargetStates.UnitStates.Defense += States;
-            Unit.TargetStates.StatesUiSet();
+            Unit.UnitStates.Defense += States;
+            Unit.StatesUiSet();
             Debug.Log($"방어력회복{Unit.name}");
         });
     }
@@ -122,7 +130,8 @@ public class Recovery : IRecovery
         Unit.animator.SetTrigger("Defense");
         Unit.actionType = (() =>
         {
-            Unit.TargetStates.UnitStates.Hp += States;
+            Unit.UnitStates.Hp += States;
+            Unit.StatesUiSet();
             Debug.Log($"회복{Unit.name}");
         });
     }
@@ -144,6 +153,7 @@ public class Buff : IBuff
         Unit.actionType = (() =>
         {
             Unit.TargetStates.UnitStates.Hp += States;
+            Unit.StatesUiSet();
             Debug.Log($"스텟강화{Unit.name}");
         });
     }

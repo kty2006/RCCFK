@@ -20,6 +20,13 @@ public class Enemy : Unit
 
     protected override void Die()
     {
-        throw new NotImplementedException();
+        animator.SetTrigger("Die");
+
+    }
+
+    public void DieInside()
+    {
+        Local.EventHandler.Invoke<UnitDead>(EnumType.EnemyDie, UnitDead.UnitDead);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 }

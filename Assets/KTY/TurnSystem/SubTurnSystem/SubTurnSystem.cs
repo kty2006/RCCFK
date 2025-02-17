@@ -20,18 +20,20 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
 
     public async UniTask Inside()
     {
-        while (!Local.TurnSystem.turnproress)
+        while (true)
         {
             TurnAction?.Invoke();
             TurnAction = null;
-
+            await UniTask.WaitUntil(() => TurnAction != null || Local.TurnSystem.turnproress);
+            if (Local.TurnSystem.turnproress)
+                break;
             await UniTask.WaitUntil(() => TurnAction != null);
         }
-        Debug.Log("끝");
+        Debug.Log($"턴종료{gameObject.name}");
     }
     public void Register(Action ActionType)//액션 할당
     {
-        TurnAction += ActionType.Invoke;
+        TurnAction = ActionType.Invoke;
     }
 
     public void UnRegister(Action ActionType)//액션 해제
