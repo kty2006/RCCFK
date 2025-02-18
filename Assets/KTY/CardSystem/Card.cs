@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Playables;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,23 +10,22 @@ public enum CardState { None, Drow }
 public class Card
 {
     //특수카드같은경우 특수능력 실행 클래스를 만들고  종류를 enum으로 만들어 특수카드 능력 실행시 Card클래스에 상태만 특수능력 클래스 함수에 넘겨주어 타입에 따라 능력실행되게 
-    private Image image;//이미지
-    private CardType type;//타입
-    private CardState state = CardState.None;
+    [SerializeField] private Sprite sprite;//이미지
+    [SerializeField] private CardType type;//타입
     public string name { get; set; }
-    public AbillityWrapper Ability { get; private set; }//추가능력
+    public AbillityWrapper Ability;//추가능력
 
-    public Card(Image image, CardType type, AbillityWrapper ability, string name)
+    public Card(Sprite image, CardType type, AbillityWrapper ability, string name)
     {
-        this.image = image;
+        this.sprite = image;
         this.type = type;
         this.Ability = ability;
         this.name = name;
     }
 
-    public Image Image()
+    public Sprite Sprite()
     {
-        return image;
+        return sprite;
     }
 
     public CardType Type()
@@ -33,22 +33,38 @@ public class Card
         return type;
     }
 
-
-    public CardState State()
+    public void SelectAction(int number)
     {
-        return state = (state == CardState.None) ? CardState.Drow : CardState.None;
+
+        switch (number)
+        {
+            case <= 12:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerAttack, Ability);
+                break;
+            case <= 25:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerDefense, Ability);
+                break;
+            case <= 38:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerRecovery, Ability);
+                break;
+            case <= 51:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerBuff, Ability);
+                break;
+        }
     }
+
 }
 
+[System.Serializable]
 public class CardBuild
 {
-    private Image image;//이미지
-    private CardType type;//타입
-    private AbillityWrapper ability = new();//추가능력
-    private string name;
-    public CardBuild Image(Image image)
+    [SerializeField] private Sprite sprite;//이미지
+    [SerializeField] private CardType type;//타입
+    [SerializeField] private AbillityWrapper ability = new();//추가능력
+    [SerializeField] private string name;
+    public CardBuild Image(Sprite sprite)
     {
-        this.image = image;
+        this.sprite = sprite;
         return this;
     }
 
@@ -60,22 +76,18 @@ public class CardBuild
         {
             case <= 12:
                 type = CardType.Attack;
-                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerAttack, ability);
                 break;
             case <= 25:
                 type = CardType.Defense;
                 ability.AbilityStates = number;
-                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerDefense, ability);
                 break;
             case <= 38:
                 type = CardType.Recovery;
                 ability.AbilityStates = number;
-                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerRecovery, ability);
                 break;
             case <= 51:
                 type = CardType.Buff;
                 ability.AbilityStates = number;
-                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerBuff, ability);
                 break;
         }
         return this;
@@ -83,6 +95,6 @@ public class CardBuild
 
     public Card Build()
     {
-        return new Card(image, type, ability, name);
+        return new Card(sprite, type, ability, name);
     }
 }

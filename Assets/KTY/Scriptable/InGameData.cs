@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,45 +8,52 @@ using UnityEngine.UI;
 public class InGameData : ScriptableObject
 {
 
-    [SerializeField] private List<Card> randomCardList = new();
+    [field: SerializeField] public Queue<Card> battleDeck { get; set; } = new();
+    [field: SerializeField] public List<Card> drowCards { get; set; } = new();
     [field: SerializeField] public List<GameObject> deckUi { get; set; } = new();
-    [SerializeField] private Dictionary<int, int> cardDB = new();
+
+    public void DrowAdd(Card card)
+    {
+        drowCards.Add(card);
+    }
 
     #region RandomCardList
-    public Card FindCard(Image obj)
+    public Card FindCard(Sprite obj)
     {
-        foreach (var card in randomCardList)
+        for (int i = 0; i < drowCards.Count; i++)
         {
-            if (card.Image().Equals(obj))
+            if (drowCards[i].Sprite() == obj)
             {
-                return card;
+                return drowCards[i];
             }
         }
         return null;
     }
 
-    public void CardsAdd(Card card)
-    {
-        randomCardList.Add(card);
-    }
-
     public Card CardGet(int index)
     {
-        return randomCardList[index];
+        int num = 0;
+        foreach (var card in battleDeck)
+        {
+            if (num == index)
+                return card;
+            ++num;
+        }
+        return null; //널 반환은 X
     }
     #endregion
 
     #region Deck
-    public void DeckAdd(GameObject cardUI)
+    public void DeckAdd(GameObject card)
     {
-        deckUi.Add(cardUI);
+        deckUi.Add(card);
     }
 
 
-    public InGameData DeckUiReMove(GameObject card)
+    public void DeckReMove(GameObject card)
     {
         deckUi.Remove(card);
-        return this;
+        Debug.Log(deckUi.Count);
     }
 
     public int DeckAllReMove()//오브젝트풀링으로 고쳐야함
@@ -59,34 +68,10 @@ public class InGameData : ScriptableObject
     }
     #endregion
 
-    #region CardDB
-    public Dictionary<int, int> CardDBGet()
+    public void SettingDack()//필수 카드 새로 받을때마다 실행시켜줘야함
     {
-        return cardDB;
-    }
-
-    public void CardDBAdd(int num)
-    {
-        cardDB.Add(num, 1);
-
-    }
-
-    public void CardDBReMove(int num)
-    {
-        if (cardDB[num] > 0)
-            cardDB[num] -= 1;
-    }
-    public bool CardDBContains(int num)
-    {
-        if (cardDB[num] == 0) return false;
-        return true;
-    }
-    #endregion
-
-
-    public void SettingDack()
-    {
-        randomCardList = new();
+        battleDeck = new();
+        drowCards = new();
         deckUi = new();
     }
 }

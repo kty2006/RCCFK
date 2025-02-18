@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public interface IEvent
 {
@@ -19,10 +20,11 @@ public interface UnitBehaviour
     public void Invoke();
 }
 
+[System.Serializable]
 public class AbillityWrapper
 {
-    public Action AbillityFunc;
-    public float AbilityStates;
+    [SerializeField] public Action AbillityFunc;
+    [SerializeField] public float AbilityStates;
 }
 
 public interface IAttack : UnitBehaviour

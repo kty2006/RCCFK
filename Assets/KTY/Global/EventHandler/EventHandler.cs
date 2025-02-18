@@ -31,6 +31,7 @@ public enum EnumType
     BattleUI,
     TurnAdd,
     TurnRmove,
+    ContentsMove,
 }
 public enum Turn { TurnSystem }
 public enum TurnAdd { TurnSystem }
