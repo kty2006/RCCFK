@@ -58,10 +58,10 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
     public async UniTask CardAni(GameObject card)
     {
         Vector3 targetPos = new(Screen.width / 2, (Screen.height / 2), 0);
-        await SetAni(card.transform.parent.gameObject, targetPos, 1);
+        await SetAni(card.gameObject, targetPos, 1);
         targetPos = new Vector3(Screen.width, 0, 0);
         await UniTask.WaitForSeconds(0.5f);
-        await SetAni(card.transform.parent.gameObject, targetPos, 0.1f);
+        await SetAni(card.gameObject, targetPos, 0.1f);
     }
 
     private async UniTask SetAni(GameObject card, Vector3 targetPos, float minScale)
@@ -94,23 +94,23 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
     {
         GameObject clickedObject = eventData.pointerCurrentRaycast.gameObject;
         Card card;
-        if (clickedObject.TryGetComponent(out Image image))
+        if (clickedObject.transform.GetChild(0).TryGetComponent(out Image image))
         {
             card = InGameData.FindCard(image.sprite);
             CardAni(clickedObject).Forget();
             Local.EventHandler.Invoke<Action>(EnumType.PlayerTurnAdd, card.Ability.AbillityFunc);
-            InGameData.DeckReMove(clickedObject.transform.parent.gameObject);
+            InGameData.DeckReMove(clickedObject);
             CardDrow(1);
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        eventData.pointerEnter.transform.parent.localScale = Vector3.one;
+        eventData.pointerEnter.transform.localScale = Vector3.one;
     }
 
     public void OnPointerMove(PointerEventData eventData)
     {
-        eventData.pointerEnter.transform.parent.localScale = Vector3.one * 1.1f;//하드코딩***
+        eventData.pointerEnter.transform.localScale = Vector3.one * 1.1f;//하드코딩***
     }
 }

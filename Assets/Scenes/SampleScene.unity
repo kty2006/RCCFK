@@ -3897,8 +3897,8 @@ GameObject:
   - component: {fileID: 1367209541}
   - component: {fileID: 1367209542}
   m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
+  m_Name: MyGrid
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4929,8 +4929,8 @@ GameObject:
   - component: {fileID: 2039567590}
   - component: {fileID: 2039567591}
   m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
+  m_Name: RemainingGrid
+  m_TagString: Grid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

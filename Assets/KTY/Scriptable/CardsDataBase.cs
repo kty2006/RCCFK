@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.GPUSort;
@@ -13,7 +12,7 @@ public class CardsDataBase : ScriptableObject
 
     [field: SerializeField] public List<Card> AllCards { get; set; } = new();
     [field: SerializeField] public List<Card> CardDeck { get; set; } = new();
-
+    [field: SerializeField] public List<Card> remainingCards { get; set; } = new();
     [field: SerializeField] public int DeckCount { get; set; }
 
     [ContextMenu("GetCards")]
@@ -43,7 +42,7 @@ public class CardsDataBase : ScriptableObject
 
     public List<Card> UiGridSet()
     {
-        List<Card> remainingCards = new();
+        remainingCards.Clear();
         bool doublRepeat = false;
         for (int i = 0; i < AllCards.Count; i++)
         {
@@ -56,9 +55,17 @@ public class CardsDataBase : ScriptableObject
                 }
             }
             if (doublRepeat)
-            { doublRepeat = false; Debug.Log("นÝบน"); continue; }
+            { doublRepeat = false; continue; }
             remainingCards.Add(AllCards[i]);
         }
         return remainingCards;
+    }
+
+    public void ChangeCard(List<int> Cards)
+    {
+        Debug.Log(Cards.Count);
+        Card savCard = remainingCards[Cards[0]];
+        remainingCards[Cards[0]] = CardDeck[Cards[1]];
+        CardDeck[Cards[1]] = savCard;
     }
 }

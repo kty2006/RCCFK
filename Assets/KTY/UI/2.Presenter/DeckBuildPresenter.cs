@@ -1,5 +1,6 @@
-using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeckBuildPresenter : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class DeckBuildPresenter : MonoBehaviour
              CardModel.UiGridSet()
             );
     }
-
+    public void ChangeCard(List<int> Cards)
+    {
+        CardModel.ChangeCard(Cards);
+        View.CardChange(Cards);
+    }
 
     public void UpdateView()
     {
