@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,6 +14,7 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
     public DeckBuildPresenter DeckBuildPresenter;
     private List<int> cards = new();
     private List<GameObject> cardsObj = new();
+    private GameObject selectCard;
     public void Start()
     {
         DeckBuildPresenter.UiGridSet();
@@ -43,11 +46,9 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
 
     }
 
-
     public void FindCard(Image card, GameObject ParentObj)
     {
         Image[] myDecks = ParentObj.GetComponentsInChildren<Image>();
-        Debug.Log(myDecks.Length);
         for (int i = 0; i < myDecks.Length; i++)
         {
             if (myDecks[i] == card)
@@ -58,26 +59,52 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    public void CardSizeSet(GameObject clickedObject, Vector3 size)
+    {
+        if (selectCard != null) selectCard.transform.localScale = Vector3.one;
+        selectCard = clickedObject;
+        selectCard.transform.localScale = size;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         GameObject clickedObject = eventData.pointerCurrentRaycast.gameObject;
-
+        GameObject parentObject = null;
+        Action<List<int>> changeFunc = null;
         if (clickedObject.TryGetComponent(out Image image) && clickedObject.transform.CompareTag("Card"))
         {
             if (cards.Count == 0 && clickedObject.transform.parent.name == RemainingCardGrid.name)
             {
-                FindCard(image, RemainingCardGrid);
-                cardsObj.Add(clickedObject);
+                parentObject = RemainingCardGrid;
+                CardSizeSet(clickedObject, Vector3.one * 1.3f);
             }
-            else if (cards.Count == 1 && clickedObject.transform.parent.name == MyDeckGrid.name)
+            else if (cards.Count == 1)
             {
-                FindCard(image, MyDeckGrid);
+                if (clickedObject.transform.parent.name == RemainingCardGrid.name)
+                {
+                    cards.Clear();
+                    cardsObj.Clear();
+                    parentObject = RemainingCardGrid;
+                    CardSizeSet(clickedObject, Vector3.one * 1.3f);
+                }
+                else if (clickedObject.transform.parent.name == MyDeckGrid.name)
+                {
+                    parentObject = MyDeckGrid;
+                    changeFunc = DeckBuildPresenter.ChangeCard;
+                    CardSizeSet(clickedObject, Vector3.one);
+                }
+            }
+            if (parentObject != null)
+            {
+                FindCard(image, parentObject);
                 cardsObj.Add(clickedObject);
-                DeckBuildPresenter.ChangeCard(cards);
+                changeFunc?.Invoke(cards);
+                parentObject = null;
+                changeFunc = null;
             }
 
         }
     }
-
-
 }
+
+

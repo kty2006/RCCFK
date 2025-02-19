@@ -32,21 +32,21 @@ public class Card
         return type;
     }
 
-    public void SelectAction(int number)
+    public void SelectAction()
     {
 
-        switch (number)
+        switch (type)
         {
-            case <= 12:
+            case <= CardType.Attack:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerAttack, Ability);
                 break;
-            case <= 25:
+            case <= CardType.Defense:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerDefense, Ability);
                 break;
-            case <= 38:
+            case <= CardType.Recovery:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerRecovery, Ability);
                 break;
-            case <= 51:
+            case <= CardType.Buff:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerBuff, Ability);
                 break;
         }

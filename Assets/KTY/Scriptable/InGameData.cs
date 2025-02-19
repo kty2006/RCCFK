@@ -24,6 +24,7 @@ public class InGameData : ScriptableObject
         {
             if (drowCards[i].Sprite() == obj)
             {
+                Debug.Log(drowCards[i].Sprite());
                 return drowCards[i];
             }
         }
@@ -53,7 +54,15 @@ public class InGameData : ScriptableObject
     public void DeckReMove(GameObject card)
     {
         deckUi.Remove(card);
-        Debug.Log(deckUi.Count);
+    }
+
+    public void AllDeckReMove()
+    {
+        for (int i = 0; i < deckUi.Count; i++)
+        {
+            Destroy(deckUi[i]);
+        }
+        deckUi.Clear();
     }
 
     public int DeckAllReMove()//오브젝트풀링으로 고쳐야함

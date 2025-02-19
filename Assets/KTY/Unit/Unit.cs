@@ -13,7 +13,6 @@ public class States
     [field: SerializeField] public float MaxHp { get; set; }
     public float hp;
     public float Hp { get { return hp; } set { hp = value; if (hp <= 0) { DeadFunc?.Invoke(); } } }
-    //public float Hp { get; set; }
     [field: SerializeField] public float speed { get; set; }
 
     public Action DeadFunc;

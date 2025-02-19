@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System;
 using Cysharp.Threading.Tasks;
+using System.Linq;
 
 public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHandler, IPointerMoveHandler
 {
@@ -22,6 +23,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         CardsPosSet();
         CreateCards(CardsData.CardDeck.Count);
         CardDrow(CardsPos.Length);
+        Local.EventHandler.Register<UnitDead>(EnumType.EnemyDie, (unitDead) => {  InGameData.AllDeckReMove(); CreateCards(CardsData.CardDeck.Count);  CardDrow(CardsPos.Length); });
     }
 
     public void CardDrow(int count)//오브젝트풀링으로 고쳐야함 //카드데이터 내에서 남아있는 카드를 뽑는 함수
@@ -85,7 +87,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         InGameData.drowCards.Clear();
         for (int i = 0; i < count; i++)
         {
-            CardsData.CardDeck[i].SelectAction(i);
+            CardsData.CardDeck[i].SelectAction();
             InGameData.battleDeck.Enqueue(CardsData.CardDeck[i]);
         }
     }
@@ -97,6 +99,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         if (clickedObject.transform.GetChild(0).TryGetComponent(out Image image))
         {
             card = InGameData.FindCard(image.sprite);
+            Debug.Log(card.Sprite());
             CardAni(clickedObject).Forget();
             Local.EventHandler.Invoke<Action>(EnumType.PlayerTurnAdd, card.Ability.AbillityFunc);
             InGameData.DeckReMove(clickedObject);
