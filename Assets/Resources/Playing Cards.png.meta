@@ -1,0 +1,2646 @@
+fileFormatVersion: 2
+guid: cb4a55571169f0441ac05153d7d583f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6992649307398397339
+    second: PC Computer - Balatro - Playing Cards_0
+  - first:
+      213: 7761769783639486819
+    second: PC Computer - Balatro - Playing Cards_1
+  - first:
+      213: -1476067447597588763
+    second: PC Computer - Balatro - Playing Cards_2
+  - first:
+      213: 7190600386158445018
+    second: PC Computer - Balatro - Playing Cards_3
+  - first:
+      213: 5518298441335776026
+    second: PC Computer - Balatro - Playing Cards_4
+  - first:
+      213: -2551637421592495338
+    second: PC Computer - Balatro - Playing Cards_5
+  - first:
+      213: -6993070542134450324
+    second: PC Computer - Balatro - Playing Cards_6
+  - first:
+      213: -8221863072275941144
+    second: PC Computer - Balatro - Playing Cards_7
+  - first:
+      213: 4954318143271815118
+    second: PC Computer - Balatro - Playing Cards_8
+  - first:
+      213: -1806572964554633490
+    second: PC Computer - Balatro - Playing Cards_9
+  - first:
+      213: -1454238393929701801
+    second: PC Computer - Balatro - Playing Cards_10
+  - first:
+      213: -5087490880175841689
+    second: PC Computer - Balatro - Playing Cards_11
+  - first:
+      213: -5637912121729201089
+    second: PC Computer - Balatro - Playing Cards_12
+  - first:
+      213: 3068079421298143760
+    second: PC Computer - Balatro - Playing Cards_13
+  - first:
+      213: -8055967384662838113
+    second: PC Computer - Balatro - Playing Cards_14
+  - first:
+      213: 6932367907740635348
+    second: PC Computer - Balatro - Playing Cards_15
+  - first:
+      213: 4576580207170780748
+    second: PC Computer - Balatro - Playing Cards_16
+  - first:
+      213: 1030914670187973305
+    second: PC Computer - Balatro - Playing Cards_17
+  - first:
+      213: 7912779578541320021
+    second: PC Computer - Balatro - Playing Cards_18
+  - first:
+      213: -2094864999487989781
+    second: PC Computer - Balatro - Playing Cards_19
+  - first:
+      213: 9170991243728501004
+    second: PC Computer - Balatro - Playing Cards_20
+  - first:
+      213: -8243316245625169717
+    second: PC Computer - Balatro - Playing Cards_21
+  - first:
+      213: 9193844268825089824
+    second: PC Computer - Balatro - Playing Cards_22
+  - first:
+      213: -7967870288972435601
+    second: PC Computer - Balatro - Playing Cards_23
+  - first:
+      213: -256572065236039133
+    second: PC Computer - Balatro - Playing Cards_24
+  - first:
+      213: -4294251174579183264
+    second: PC Computer - Balatro - Playing Cards_25
+  - first:
+      213: 7248864492549642765
+    second: PC Computer - Balatro - Playing Cards_26
+  - first:
+      213: 2266711863514585238
+    second: PC Computer - Balatro - Playing Cards_27
+  - first:
+      213: 9023666425154055642
+    second: PC Computer - Balatro - Playing Cards_28
+  - first:
+      213: -5561452311985340751
+    second: PC Computer - Balatro - Playing Cards_29
+  - first:
+      213: -1572605425181916717
+    second: PC Computer - Balatro - Playing Cards_30
+  - first:
+      213: -4885914195084936827
+    second: PC Computer - Balatro - Playing Cards_31
+  - first:
+      213: -5101965826913486254
+    second: PC Computer - Balatro - Playing Cards_32
+  - first:
+      213: 7556377375391334376
+    second: PC Computer - Balatro - Playing Cards_33
+  - first:
+      213: 6855730196497131916
+    second: PC Computer - Balatro - Playing Cards_34
+  - first:
+      213: 1226757980632253199
+    second: PC Computer - Balatro - Playing Cards_35
+  - first:
+      213: 5577939855759069224
+    second: PC Computer - Balatro - Playing Cards_36
+  - first:
+      213: -5035481712671321981
+    second: PC Computer - Balatro - Playing Cards_37
+  - first:
+      213: 2625829094460644935
+    second: PC Computer - Balatro - Playing Cards_38
+  - first:
+      213: 2158527050327198935
+    second: PC Computer - Balatro - Playing Cards_39
+  - first:
+      213: 5648190557320193064
+    second: PC Computer - Balatro - Playing Cards_40
+  - first:
+      213: -8394107208193223214
+    second: PC Computer - Balatro - Playing Cards_41
+  - first:
+      213: 813561954953134334
+    second: PC Computer - Balatro - Playing Cards_42
+  - first:
+      213: 6517055018954275756
+    second: PC Computer - Balatro - Playing Cards_43
+  - first:
+      213: -5312760069266709133
+    second: PC Computer - Balatro - Playing Cards_44
+  - first:
+      213: -2102407171548772755
+    second: PC Computer - Balatro - Playing Cards_45
+  - first:
+      213: -3517347643455469553
+    second: PC Computer - Balatro - Playing Cards_46
+  - first:
+      213: 6123541516030584813
+    second: PC Computer - Balatro - Playing Cards_47
+  - first:
+      213: -1125308406288759802
+    second: PC Computer - Balatro - Playing Cards_48
+  - first:
+      213: -8118265721046673734
+    second: PC Computer - Balatro - Playing Cards_49
+  - first:
+      213: -7231271463423829925
+    second: PC Computer - Balatro - Playing Cards_50
+  - first:
+      213: 6656911519103003196
+    second: PC Computer - Balatro - Playing Cards_51
+  - first:
+      213: -7547344030544206725
+    second: PC Computer - Balatro - Playing Cards_52
+  - first:
+      213: -1756720339289555700
+    second: PC Computer - Balatro - Playing Cards_53
+  - first:
+      213: -3747407399167321878
+    second: PC Computer - Balatro - Playing Cards_54
+  - first:
+      213: -781509901880453475
+    second: PC Computer - Balatro - Playing Cards_55
+  - first:
+      213: -1710082462146981473
+    second: PC Computer - Balatro - Playing Cards_56
+  - first:
+      213: -6431871869010805018
+    second: PC Computer - Balatro - Playing Cards_57
+  - first:
+      213: -4230541293419057762
+    second: PC Computer - Balatro - Playing Cards_58
+  - first:
+      213: -1125242146891977144
+    second: PC Computer - Balatro - Playing Cards_59
+  - first:
+      213: 852694932704190178
+    second: PC Computer - Balatro - Playing Cards_60
+  - first:
+      213: -181390649482935094
+    second: PC Computer - Balatro - Playing Cards_61
+  - first:
+      213: 4707796829574095009
+    second: PC Computer - Balatro - Playing Cards_62
+  - first:
+      213: -4023858458490792224
+    second: PC Computer - Balatro - Playing Cards_63
+  - first:
+      213: -230967677658546554
+    second: PC Computer - Balatro - Playing Cards_64
+  - first:
+      213: -3407727089619091325
+    second: PC Computer - Balatro - Playing Cards_65
+  - first:
+      213: -4760148825703483780
+    second: PC Computer - Balatro - Playing Cards_66
+  - first:
+      213: -4338621730605936585
+    second: PC Computer - Balatro - Playing Cards_67
+  - first:
+      213: 1841688596285066870
+    second: PC Computer - Balatro - Playing Cards_68
+  - first:
+      213: -7474854254193491190
+    second: PC Computer - Balatro - Playing Cards_69
+  - first:
+      213: 7865191532368668966
+    second: PC Computer - Balatro - Playing Cards_70
+  - first:
+      213: 8299488528875378933
+    second: PC Computer - Balatro - Playing Cards_71
+  - first:
+      213: -8363081397117692139
+    second: PC Computer - Balatro - Playing Cards_72
+  - first:
+      213: 3518885091317031810
+    second: PC Computer - Balatro - Playing Cards_73
+  - first:
+      213: -3029425469558345027
+    second: PC Computer - Balatro - Playing Cards_74
+  - first:
+      213: -2284729338229542111
+    second: PC Computer - Balatro - Playing Cards_75
+  - first:
+      213: -5406931329071332004
+    second: PC Computer - Balatro - Playing Cards_76
+  - first:
+      213: 1449219654030579652
+    second: PC Computer - Balatro - Playing Cards_77
+  - first:
+      213: -323760026012364382
+    second: PC Computer - Balatro - Playing Cards_78
+  - first:
+      213: 3139897561196781962
+    second: PC Computer - Balatro - Playing Cards_79
+  - first:
+      213: -3923502901149980392
+    second: PC Computer - Balatro - Playing Cards_80
+  - first:
+      213: -1688461750495939034
+    second: PC Computer - Balatro - Playing Cards_81
+  - first:
+      213: -8416168438532960625
+    second: PC Computer - Balatro - Playing Cards_82
+  - first:
+      213: -476902182395763472
+    second: PC Computer - Balatro - Playing Cards_83
+  - first:
+      213: -3308449919422682068
+    second: PC Computer - Balatro - Playing Cards_84
+  - first:
+      213: 1612172060414906159
+    second: PC Computer - Balatro - Playing Cards_85
+  - first:
+      213: -3538889280757566831
+    second: PC Computer - Balatro - Playing Cards_86
+  - first:
+      213: -6141553172439172176
+    second: PC Computer - Balatro - Playing Cards_87
+  - first:
+      213: -2067121533113467546
+    second: PC Computer - Balatro - Playing Cards_88
+  - first:
+      213: 4814078215470183601
+    second: PC Computer - Balatro - Playing Cards_89
+  - first:
+      213: 3865466450990260619
+    second: PC Computer - Balatro - Playing Cards_90
+  - first:
+      213: 2764924459905313242
+    second: PC Computer - Balatro - Playing Cards_91
+  - first:
+      213: 1747526173321996495
+    second: PC Computer - Balatro - Playing Cards_92
+  - first:
+      213: 7392838122537356652
+    second: PC Computer - Balatro - Playing Cards_93
+  - first:
+      213: 4145089687752734942
+    second: PC Computer - Balatro - Playing Cards_94
+  - first:
+      213: -3755244004697669639
+    second: PC Computer - Balatro - Playing Cards_95
+  - first:
+      213: -3494476302093314839
+    second: PC Computer - Balatro - Playing Cards_96
+  - first:
+      213: -2403094438979172686
+    second: PC Computer - Balatro - Playing Cards_97
+  - first:
+      213: 4137701056166997912
+    second: PC Computer - Balatro - Playing Cards_98
+  - first:
+      213: -8323176363323765415
+    second: PC Computer - Balatro - Playing Cards_99
+  - first:
+      213: -795213296447435252
+    second: PC Computer - Balatro - Playing Cards_100
+  - first:
+      213: 2306924632203553982
+    second: PC Computer - Balatro - Playing Cards_101
+  - first:
+      213: 5396496335113879297
+    second: PC Computer - Balatro - Playing Cards_102
+  - first:
+      213: 2199408536407857905
+    second: PC Computer - Balatro - Playing Cards_103
+  - first:
+      213: 2528957587926301624
+    second: PC Computer - Balatro - Playing Cards_104
+  - first:
+      213: -3574885504575815814
+    second: PC Computer - Balatro - Playing Cards_105
+  - first:
+      213: -8644624163766774530
+    second: PC Computer - Balatro - Playing Cards_106
+  - first:
+      213: -4026302594770180491
+    second: PC Computer - Balatro - Playing Cards_107
+  - first:
+      213: -5812512114320616733
+    second: PC Computer - Balatro - Playing Cards_108
+  - first:
+      213: 1733310470369005201
+    second: PC Computer - Balatro - Playing Cards_109
+  - first:
+      213: -7734461638670715557
+    second: PC Computer - Balatro - Playing Cards_110
+  - first:
+      213: -9098313362622282473
+    second: PC Computer - Balatro - Playing Cards_111
+  - first:
+      213: -8374837771527165158
+    second: PC Computer - Balatro - Playing Cards_112
+  - first:
+      213: -6455960960668815260
+    second: PC Computer - Balatro - Playing Cards_113
+  - first:
+      213: 7162031696209199280
+    second: PC Computer - Balatro - Playing Cards_114
+  - first:
+      213: -4382691765040514629
+    second: PC Computer - Balatro - Playing Cards_115
+  - first:
+      213: 4394389606484363915
+    second: PC Computer - Balatro - Playing Cards_116
+  - first:
+      213: 6232968537793297691
+    second: PC Computer - Balatro - Playing Cards_117
+  - first:
+      213: -1487468687206130523
+    second: PC Computer - Balatro - Playing Cards_118
+  - first:
+      213: 6690541345795942726
+    second: PC Computer - Balatro - Playing Cards_119
+  - first:
+      213: 8701292346927315603
+    second: PC Computer - Balatro - Playing Cards_120
+  - first:
+      213: -6742629848952151930
+    second: PC Computer - Balatro - Playing Cards_121
+  - first:
+      213: 2499417679118747756
+    second: PC Computer - Balatro - Playing Cards_122
+  - first:
+      213: 3386113139949017382
+    second: PC Computer - Balatro - Playing Cards_123
+  - first:
+      213: 4603750985196913784
+    second: PC Computer - Balatro - Playing Cards_124
+  - first:
+      213: 2496226994773861159
+    second: PC Computer - Balatro - Playing Cards_125
+  - first:
+      213: -8797131057268646008
+    second: PC Computer - Balatro - Playing Cards_126
+  - first:
+      213: 3335306552478433043
+    second: PC Computer - Balatro - Playing Cards_127
+  - first:
+      213: -3238613109557406622
+    second: PC Computer - Balatro - Playing Cards_128
+  - first:
+      213: -7126470961798923835
+    second: PC Computer - Balatro - Playing Cards_129
+  - first:
+      213: -7795494448749247822
+    second: PC Computer - Balatro - Playing Cards_130
+  - first:
+      213: -3301318068489312970
+    second: PC Computer - Balatro - Playing Cards_131
+  - first:
+      213: -7678418095462443544
+    second: PC Computer - Balatro - Playing Cards_132
+  - first:
+      213: -9062754203416524541
+    second: PC Computer - Balatro - Playing Cards_133
+  - first:
+      213: -8427585728765693468
+    second: PC Computer - Balatro - Playing Cards_134
+  - first:
+      213: 4608517344086885562
+    second: PC Computer - Balatro - Playing Cards_135
+  - first:
+      213: -1881818355079860600
+    second: PC Computer - Balatro - Playing Cards_136
+  - first:
+      213: 7825961180980826825
+    second: PC Computer - Balatro - Playing Cards_137
+  - first:
+      213: -3321432313503075119
+    second: PC Computer - Balatro - Playing Cards_138
+  - first:
+      213: 890588497293487830
+    second: PC Computer - Balatro - Playing Cards_139
+  - first:
+      213: 8533334422229727676
+    second: PC Computer - Balatro - Playing Cards_140
+  - first:
+      213: 6835605589220528631
+    second: PC Computer - Balatro - Playing Cards_141
+  - first:
+      213: -5906487208854620428
+    second: PC Computer - Balatro - Playing Cards_142
+  - first:
+      213: -3085347988362525636
+    second: PC Computer - Balatro - Playing Cards_143
+  - first:
+      213: -7738377016109378059
+    second: PC Computer - Balatro - Playing Cards_144
+  - first:
+      213: 6379311136801474676
+    second: PC Computer - Balatro - Playing Cards_145
+  - first:
+      213: 3467451842457928761
+    second: PC Computer - Balatro - Playing Cards_146
+  - first:
+      213: -57467362851532144
+    second: PC Computer - Balatro - Playing Cards_147
+  - first:
+      213: 8330067721291660508
+    second: PC Computer - Balatro - Playing Cards_148
+  - first:
+      213: 994041251801350111
+    second: PC Computer - Balatro - Playing Cards_149
+  - first:
+      213: 651904907830955246
+    second: PC Computer - Balatro - Playing Cards_150
+  - first:
+      213: -1137917179546760151
+    second: PC Computer - Balatro - Playing Cards_151
+  - first:
+      213: -3364682680434146363
+    second: PC Computer - Balatro - Playing Cards_152
+  - first:
+      213: 7792281025073525892
+    second: PC Computer - Balatro - Playing Cards_153
+  - first:
+      213: 8374120213231304699
+    second: PC Computer - Balatro - Playing Cards_154
+  - first:
+      213: 2897882817742188221
+    second: PC Computer - Balatro - Playing Cards_155
+  - first:
+      213: -6183315582170293344
+    second: PC Computer - Balatro - Playing Cards_156
+  - first:
+      213: 1686050696881363291
+    second: PC Computer - Balatro - Playing Cards_157
+  - first:
+      213: 8631872820630438662
+    second: PC Computer - Balatro - Playing Cards_158
+  - first:
+      213: 6027768849609490186
+    second: PC Computer - Balatro - Playing Cards_159
+  - first:
+      213: 8666651257655035472
+    second: PC Computer - Balatro - Playing Cards_160
+  - first:
+      213: -5310141189899463604
+    second: PC Computer - Balatro - Playing Cards_161
+  - first:
+      213: -2333120987225692290
+    second: PC Computer - Balatro - Playing Cards_162
+  - first:
+      213: 1429427365566692475
+    second: PC Computer - Balatro - Playing Cards_163
+  - first:
+      213: 5356955192645685122
+    second: PC Computer - Balatro - Playing Cards_164
+  - first:
+      213: -1421454973974046493
+    second: PC Computer - Balatro - Playing Cards_165
+  - first:
+      213: -5077294086397633088
+    second: PC Computer - Balatro - Playing Cards_166
+  - first:
+      213: 746735165139460879
+    second: PC Computer - Balatro - Playing Cards_167
+  - first:
+      213: 4400545639573458394
+    second: PC Computer - Balatro - Playing Cards_168
+  - first:
+      213: 5152344015096263597
+    second: PC Computer - Balatro - Playing Cards_169
+  - first:
+      213: -1133411086707830181
+    second: PC Computer - Balatro - Playing Cards_170
+  - first:
+      213: 2295893585174893819
+    second: PC Computer - Balatro - Playing Cards_171
+  - first:
+      213: -2619179764376899532
+    second: PC Computer - Balatro - Playing Cards_172
+  - first:
+      213: 4220932972954733772
+    second: PC Computer - Balatro - Playing Cards_173
+  - first:
+      213: -1805452306973419162
+    second: PC Computer - Balatro - Playing Cards_174
+  - first:
+      213: 626205731557891626
+    second: PC Computer - Balatro - Playing Cards_175
+  - first:
+      213: 7259912829721495817
+    second: PC Computer - Balatro - Playing Cards_176
+  - first:
+      213: -48972468132012340
+    second: PC Computer - Balatro - Playing Cards_177
+  - first:
+      213: 7092705630612763470
+    second: PC Computer - Balatro - Playing Cards_178
+  - first:
+      213: 5764920907225560152
+    second: PC Computer - Balatro - Playing Cards_179
+  - first:
+      213: 6195983639501810646
+    second: PC Computer - Balatro - Playing Cards_180
+  - first:
+      213: 2788051263916289850
+    second: PC Computer - Balatro - Playing Cards_181
+  - first:
+      213: 8574095164148629902
+    second: PC Computer - Balatro - Playing Cards_182
+  - first:
+      213: -6293207358164938585
+    second: PC Computer - Balatro - Playing Cards_183
+  - first:
+      213: -4546370815060060570
+    second: PC Computer - Balatro - Playing Cards_184
+  - first:
+      213: 7279940478259652290
+    second: PC Computer - Balatro - Playing Cards_185
+  - first:
+      213: 6021345763433904831
+    second: PC Computer - Balatro - Playing Cards_186
+  - first:
+      213: -4763735094248026072
+    second: PC Computer - Balatro - Playing Cards_187
+  - first:
+      213: -2436623580366027841
+    second: PC Computer - Balatro - Playing Cards_188
+  - first:
+      213: -6591479884999194613
+    second: PC Computer - Balatro - Playing Cards_189
+  - first:
+      213: 688572543757676221
+    second: PC Computer - Balatro - Playing Cards_190
+  - first:
+      213: -2529448296250941849
+    second: PC Computer - Balatro - Playing Cards_191
+  - first:
+      213: 4203760908364835589
+    second: PC Computer - Balatro - Playing Cards_192
+  - first:
+      213: 4721128833934158738
+    second: PC Computer - Balatro - Playing Cards_193
+  - first:
+      213: -4435009025264770149
+    second: PC Computer - Balatro - Playing Cards_194
+  - first:
+      213: -7985747220694772766
+    second: PC Computer - Balatro - Playing Cards_195
+  - first:
+      213: -4184036406241439121
+    second: PC Computer - Balatro - Playing Cards_196
+  - first:
+      213: -3676833913871604111
+    second: PC Computer - Balatro - Playing Cards_197
+  - first:
+      213: -4990292794765758221
+    second: PC Computer - Balatro - Playing Cards_198
+  - first:
+      213: 8614510117538926927
+    second: PC Computer - Balatro - Playing Cards_199
+  - first:
+      213: -271400647951291449
+    second: PC Computer - Balatro - Playing Cards_200
+  - first:
+      213: 4451659767664079199
+    second: PC Computer - Balatro - Playing Cards_201
+  - first:
+      213: -9192310271928456240
+    second: PC Computer - Balatro - Playing Cards_202
+  - first:
+      213: -3230540887018041510
+    second: PC Computer - Balatro - Playing Cards_203
+  - first:
+      213: -501877275842740545
+    second: PC Computer - Balatro - Playing Cards_204
+  - first:
+      213: -8801626977675082171
+    second: PC Computer - Balatro - Playing Cards_205
+  - first:
+      213: 9181086774216495555
+    second: PC Computer - Balatro - Playing Cards_206
+  - first:
+      213: 7606769277171601811
+    second: PC Computer - Balatro - Playing Cards_207
+  - first:
+      213: -134024540340141358
+    second: PC Computer - Balatro - Playing Cards_208
+  - first:
+      213: -5630410846829443246
+    second: PC Computer - Balatro - Playing Cards_209
+  - first:
+      213: -2749262490778240167
+    second: PC Computer - Balatro - Playing Cards_210
+  - first:
+      213: -6787149111464635030
+    second: PC Computer - Balatro - Playing Cards_211
+  - first:
+      213: 4826877223045608359
+    second: PC Computer - Balatro - Playing Cards_212
+  - first:
+      213: -6080175554468845611
+    second: PC Computer - Balatro - Playing Cards_213
+  - first:
+      213: 7351840029576276164
+    second: PC Computer - Balatro - Playing Cards_214
+  - first:
+      213: 7940922674230526589
+    second: PC Computer - Balatro - Playing Cards_215
+  - first:
+      213: 817153921046612407
+    second: PC Computer - Balatro - Playing Cards_216
+  - first:
+      213: 3156117121120032097
+    second: PC Computer - Balatro - Playing Cards_217
+  - first:
+      213: -4381001858439578464
+    second: PC Computer - Balatro - Playing Cards_218
+  - first:
+      213: 6586808744075239340
+    second: PC Computer - Balatro - Playing Cards_219
+  - first:
+      213: 6235043220176818440
+    second: PC Computer - Balatro - Playing Cards_220
+  - first:
+      213: 278183675389513151
+    second: PC Computer - Balatro - Playing Cards_221
+  - first:
+      213: -4285449051461087577
+    second: PC Computer - Balatro - Playing Cards_222
+  - first:
+      213: -4717939129027398484
+    second: PC Computer - Balatro - Playing Cards_223
+  - first:
+      213: -1286926972788877132
+    second: PC Computer - Balatro - Playing Cards_224
+  - first:
+      213: -7484815503055888052
+    second: PC Computer - Balatro - Playing Cards_225
+  - first:
+      213: 2335687333676703595
+    second: PC Computer - Balatro - Playing Cards_226
+  - first:
+      213: -1586575812584587305
+    second: PC Computer - Balatro - Playing Cards_227
+  - first:
+      213: -4287851283491186556
+    second: PC Computer - Balatro - Playing Cards_228
+  - first:
+      213: 7256167935945414765
+    second: PC Computer - Balatro - Playing Cards_229
+  - first:
+      213: 2195665657031949599
+    second: PC Computer - Balatro - Playing Cards_230
+  - first:
+      213: 175676544127382754
+    second: PC Computer - Balatro - Playing Cards_231
+  - first:
+      213: -8392909114293162669
+    second: PC Computer - Balatro - Playing Cards_232
+  - first:
+      213: -2345163604262461538
+    second: PC Computer - Balatro - Playing Cards_233
+  - first:
+      213: 6003828654327523535
+    second: PC Computer - Balatro - Playing Cards_234
+  - first:
+      213: 5656429469400134649
+    second: PC Computer - Balatro - Playing Cards_235
+  - first:
+      213: 7718625716812893537
+    second: PC Computer - Balatro - Playing Cards_236
+  - first:
+      213: -6041275640670118024
+    second: PC Computer - Balatro - Playing Cards_237
+  - first:
+      213: 5494726786392373613
+    second: PC Computer - Balatro - Playing Cards_238
+  - first:
+      213: 4217515815669379027
+    second: PC Computer - Balatro - Playing Cards_239
+  - first:
+      213: -6192873783246635476
+    second: PC Computer - Balatro - Playing Cards_240
+  - first:
+      213: 6261053124916633161
+    second: PC Computer - Balatro - Playing Cards_241
+  - first:
+      213: -8685957886568930984
+    second: PC Computer - Balatro - Playing Cards_242
+  - first:
+      213: -7257895897343421665
+    second: PC Computer - Balatro - Playing Cards_243
+  - first:
+      213: -4173125489078023365
+    second: PC Computer - Balatro - Playing Cards_244
+  - first:
+      213: -5090876689228591945
+    second: PC Computer - Balatro - Playing Cards_245
+  - first:
+      213: 6484375688211105779
+    second: PC Computer - Balatro - Playing Cards_246
+  - first:
+      213: -4534185474118632909
+    second: PC Computer - Balatro - Playing Cards_247
+  - first:
+      213: 4064551319618790625
+    second: PC Computer - Balatro - Playing Cards_248
+  - first:
+      213: 8483826745421961379
+    second: PC Computer - Balatro - Playing Cards_249
+  - first:
+      213: 5475766235245812240
+    second: PC Computer - Balatro - Playing Cards_250
+  - first:
+      213: 4178584040716030662
+    second: PC Computer - Balatro - Playing Cards_251
+  - first:
+      213: 332366291534821266
+    second: PC Computer - Balatro - Playing Cards_252
+  - first:
+      213: 4234014574881325281
+    second: PC Computer - Balatro - Playing Cards_253
+  - first:
+      213: 7706733570467982444
+    second: PC Computer - Balatro - Playing Cards_254
+  - first:
+      213: 544009309669587772
+    second: PC Computer - Balatro - Playing Cards_255
+  - first:
+      213: -7397135044328669130
+    second: PC Computer - Balatro - Playing Cards_256
+  - first:
+      213: 9054667475850494484
+    second: PC Computer - Balatro - Playing Cards_257
+  - first:
+      213: 6008954101076921713
+    second: PC Computer - Balatro - Playing Cards_258
+  - first:
+      213: -2745202598839547747
+    second: PC Computer - Balatro - Playing Cards_259
+  - first:
+      213: -7116016613846246663
+    second: PC Computer - Balatro - Playing Cards_260
+  - first:
+      213: 9041659096353510240
+    second: PC Computer - Balatro - Playing Cards_261
+  - first:
+      213: 9033563486554512543
+    second: PC Computer - Balatro - Playing Cards_262
+  - first:
+      213: 7132844141650514493
+    second: PC Computer - Balatro - Playing Cards_263
+  - first:
+      213: 2451577965064980052
+    second: PC Computer - Balatro - Playing Cards_264
+  - first:
+      213: -3376905885550846987
+    second: PC Computer - Balatro - Playing Cards_265
+  - first:
+      213: 1695730068251396977
+    second: PC Computer - Balatro - Playing Cards_266
+  - first:
+      213: 6858676955512119261
+    second: PC Computer - Balatro - Playing Cards_267
+  - first:
+      213: -6765943172567831712
+    second: PC Computer - Balatro - Playing Cards_268
+  - first:
+      213: 2159901273592509790
+    second: PC Computer - Balatro - Playing Cards_269
+  - first:
+      213: 1315005329440198521
+    second: PC Computer - Balatro - Playing Cards_270
+  - first:
+      213: 823716859952606245
+    second: PC Computer - Balatro - Playing Cards_271
+  - first:
+      213: 2745213132168953483
+    second: PC Computer - Balatro - Playing Cards_272
+  - first:
+      213: -1653556840187082814
+    second: PC Computer - Balatro - Playing Cards_273
+  - first:
+      213: 6730740000493688882
+    second: PC Computer - Balatro - Playing Cards_274
+  - first:
+      213: 7233828817632622010
+    second: PC Computer - Balatro - Playing Cards_275
+  - first:
+      213: -8732043266318443300
+    second: PC Computer - Balatro - Playing Cards_276
+  - first:
+      213: -3852916561274258484
+    second: PC Computer - Balatro - Playing Cards_277
+  - first:
+      213: -8998897505628233218
+    second: PC Computer - Balatro - Playing Cards_278
+  - first:
+      213: -1667882220020784147
+    second: PC Computer - Balatro - Playing Cards_279
+  - first:
+      213: 821264435262162391
+    second: PC Computer - Balatro - Playing Cards_280
+  - first:
+      213: -5684906225144525319
+    second: PC Computer - Balatro - Playing Cards_281
+  - first:
+      213: 8665750945435122140
+    second: PC Computer - Balatro - Playing Cards_282
+  - first:
+      213: 3468233168947215378
+    second: PC Computer - Balatro - Playing Cards_283
+  - first:
+      213: 367665557895377538
+    second: PC Computer - Balatro - Playing Cards_284
+  - first:
+      213: -376330551530687027
+    second: PC Computer - Balatro - Playing Cards_285
+  - first:
+      213: -5140362574103942249
+    second: PC Computer - Balatro - Playing Cards_286
+  - first:
+      213: -8852862703214473753
+    second: PC Computer - Balatro - Playing Cards_287
+  - first:
+      213: -4795851304766086206
+    second: PC Computer - Balatro - Playing Cards_288
+  - first:
+      213: 8014532700011391249
+    second: PC Computer - Balatro - Playing Cards_289
+  - first:
+      213: 8533581141889993682
+    second: PC Computer - Balatro - Playing Cards_290
+  - first:
+      213: -6819157602407996408
+    second: PC Computer - Balatro - Playing Cards_291
+  - first:
+      213: -7598371375902885614
+    second: PC Computer - Balatro - Playing Cards_292
+  - first:
+      213: 197478125092546450
+    second: PC Computer - Balatro - Playing Cards_293
+  - first:
+      213: 2664260045325435719
+    second: PC Computer - Balatro - Playing Cards_294
+  - first:
+      213: 8515088865501581868
+    second: PC Computer - Balatro - Playing Cards_295
+  - first:
+      213: -9031994168015277547
+    second: PC Computer - Balatro - Playing Cards_296
+  - first:
+      213: -1284368995542292612
+    second: PC Computer - Balatro - Playing Cards_297
+  - first:
+      213: -8020855145301818828
+    second: PC Computer - Balatro - Playing Cards_298
+  - first:
+      213: 5269135690255544044
+    second: PC Computer - Balatro - Playing Cards_299
+  - first:
+      213: 7281178384184006765
+    second: PC Computer - Balatro - Playing Cards_300
+  - first:
+      213: 2940041233715317768
+    second: PC Computer - Balatro - Playing Cards_301
+  - first:
+      213: 5692842548061499240
+    second: PC Computer - Balatro - Playing Cards_302
+  - first:
+      213: 3466214791267440744
+    second: PC Computer - Balatro - Playing Cards_303
+  - first:
+      213: 3212870283612489458
+    second: PC Computer - Balatro - Playing Cards_304
+  - first:
+      213: -6889345663343087203
+    second: PC Computer - Balatro - Playing Cards_305
+  - first:
+      213: -7201262625550083055
+    second: PC Computer - Balatro - Playing Cards_306
+  - first:
+      213: 3281629058776026464
+    second: PC Computer - Balatro - Playing Cards_307
+  - first:
+      213: -2525645182196947482
+    second: PC Computer - Balatro - Playing Cards_308
+  - first:
+      213: -7361640667441827130
+    second: PC Computer - Balatro - Playing Cards_309
+  - first:
+      213: -8608670910191235480
+    second: PC Computer - Balatro - Playing Cards_310
+  - first:
+      213: -2192877392479530257
+    second: PC Computer - Balatro - Playing Cards_311
+  - first:
+      213: 6078010060549227091
+    second: PC Computer - Balatro - Playing Cards_312
+  - first:
+      213: -4352308736289224340
+    second: PC Computer - Balatro - Playing Cards_313
+  - first:
+      213: -6888185351666838965
+    second: PC Computer - Balatro - Playing Cards_314
+  - first:
+      213: -3042086410228877810
+    second: PC Computer - Balatro - Playing Cards_315
+  - first:
+      213: -1238782785911479266
+    second: PC Computer - Balatro - Playing Cards_316
+  - first:
+      213: -418528539443632960
+    second: PC Computer - Balatro - Playing Cards_317
+  - first:
+      213: 6365473660143435092
+    second: PC Computer - Balatro - Playing Cards_318
+  - first:
+      213: 5397496986588925459
+    second: PC Computer - Balatro - Playing Cards_319
+  - first:
+      213: 4245370156230336194
+    second: PC Computer - Balatro - Playing Cards_320
+  - first:
+      213: -6243023781583769606
+    second: PC Computer - Balatro - Playing Cards_321
+  - first:
+      213: -2725393303225106680
+    second: PC Computer - Balatro - Playing Cards_322
+  - first:
+      213: 8657245394165283124
+    second: PC Computer - Balatro - Playing Cards_323
+  - first:
+      213: 2217288284863750225
+    second: PC Computer - Balatro - Playing Cards_324
+  - first:
+      213: 3501617675059995748
+    second: PC Computer - Balatro - Playing Cards_325
+  - first:
+      213: -8026982246552678456
+    second: PC Computer - Balatro - Playing Cards_326
+  - first:
+      213: 1495455281469674631
+    second: PC Computer - Balatro - Playing Cards_327
+  - first:
+      213: -6108232231791400226
+    second: PC Computer - Balatro - Playing Cards_328
+  - first:
+      213: -6120774553922082869
+    second: PC Computer - Balatro - Playing Cards_329
+  - first:
+      213: -8494266325729912347
+    second: PC Computer - Balatro - Playing Cards_330
+  - first:
+      213: -514193747792828466
+    second: PC Computer - Balatro - Playing Cards_331
+  - first:
+      213: 1130598198120039357
+    second: PC Computer - Balatro - Playing Cards_332
+  - first:
+      213: -3930229527225619412
+    second: PC Computer - Balatro - Playing Cards_333
+  - first:
+      213: -7282940127607860640
+    second: PC Computer - Balatro - Playing Cards_334
+  - first:
+      213: -6331445998172756809
+    second: PC Computer - Balatro - Playing Cards_335
+  - first:
+      213: 2984225206399389888
+    second: PC Computer - Balatro - Playing Cards_336
+  - first:
+      213: 4130772544070100028
+    second: PC Computer - Balatro - Playing Cards_337
+  - first:
+      213: 3649313510152193646
+    second: PC Computer - Balatro - Playing Cards_338
+  - first:
+      213: 405041287169870345
+    second: PC Computer - Balatro - Playing Cards_339
+  - first:
+      213: -488252905251374578
+    second: PC Computer - Balatro - Playing Cards_340
+  - first:
+      213: -5367275180115416488
+    second: PC Computer - Balatro - Playing Cards_341
+  - first:
+      213: 8618788106993428554
+    second: PC Computer - Balatro - Playing Cards_342
+  - first:
+      213: 3446611507042697768
+    second: PC Computer - Balatro - Playing Cards_343
+  - first:
+      213: -9205040016015966222
+    second: PC Computer - Balatro - Playing Cards_344
+  - first:
+      213: -4626902810679989305
+    second: PC Computer - Balatro - Playing Cards_345
+  - first:
+      213: 6502887525420309352
+    second: PC Computer - Balatro - Playing Cards_346
+  - first:
+      213: -5913700093645806558
+    second: PC Computer - Balatro - Playing Cards_347
+  - first:
+      213: 7925333348849417549
+    second: PC Computer - Balatro - Playing Cards_348
+  - first:
+      213: 3385089378558447302
+    second: PC Computer - Balatro - Playing Cards_349
+  - first:
+      213: 5450584059677576785
+    second: PC Computer - Balatro - Playing Cards_350
+  - first:
+      213: -3575048558274259025
+    second: PC Computer - Balatro - Playing Cards_351
+  - first:
+      213: 2731717884288617505
+    second: PC Computer - Balatro - Playing Cards_352
+  - first:
+      213: -7852343815379048875
+    second: PC Computer - Balatro - Playing Cards_353
+  - first:
+      213: -5067052159351799553
+    second: PC Computer - Balatro - Playing Cards_354
+  - first:
+      213: -2567108884346267138
+    second: PC Computer - Balatro - Playing Cards_355
+  - first:
+      213: -1754022327984064836
+    second: PC Computer - Balatro - Playing Cards_356
+  - first:
+      213: -1279598377705685271
+    second: PC Computer - Balatro - Playing Cards_357
+  - first:
+      213: -3001535662373065091
+    second: PC Computer - Balatro - Playing Cards_358
+  - first:
+      213: 7795826398582454716
+    second: PC Computer - Balatro - Playing Cards_359
+  - first:
+      213: 7484100706205174617
+    second: PC Computer - Balatro - Playing Cards_360
+  - first:
+      213: 1260732843444866595
+    second: PC Computer - Balatro - Playing Cards_361
+  - first:
+      213: -4113704297599201974
+    second: PC Computer - Balatro - Playing Cards_362
+  - first:
+      213: -8517597381282919236
+    second: PC Computer - Balatro - Playing Cards_363
+  - first:
+      213: 5847326421128986331
+    second: PC Computer - Balatro - Playing Cards_364
+  - first:
+      213: 309687382885511058
+    second: PC Computer - Balatro - Playing Cards_365
+  - first:
+      213: -6517373077938642665
+    second: PC Computer - Balatro - Playing Cards_366
+  - first:
+      213: -294679511479807831
+    second: PC Computer - Balatro - Playing Cards_367
+  - first:
+      213: -5913341868194031467
+    second: PC Computer - Balatro - Playing Cards_368
+  - first:
+      213: 1172421772969184272
+    second: PC Computer - Balatro - Playing Cards_369
+  - first:
+      213: -4126334657264045225
+    second: PC Computer - Balatro - Playing Cards_370
+  - first:
+      213: -963949065973950587
+    second: PC Computer - Balatro - Playing Cards_371
+  - first:
+      213: -2486505564631368322
+    second: PC Computer - Balatro - Playing Cards_372
+  - first:
+      213: -1139416359829490621
+    second: PC Computer - Balatro - Playing Cards_373
+  - first:
+      213: -2807304783262357080
+    second: PC Computer - Balatro - Playing Cards_374
+  - first:
+      213: 8888940062585767785
+    second: PC Computer - Balatro - Playing Cards_375
+  - first:
+      213: -4351793393151173970
+    second: PC Computer - Balatro - Playing Cards_376
+  - first:
+      213: -4641928247934932448
+    second: PC Computer - Balatro - Playing Cards_377
+  - first:
+      213: 2748595546785781018
+    second: PC Computer - Balatro - Playing Cards_378
+  - first:
+      213: 6861528536368771374
+    second: PC Computer - Balatro - Playing Cards_379
+  - first:
+      213: 2255290744624456573
+    second: PC Computer - Balatro - Playing Cards_380
+  - first:
+      213: -7096428828370157284
+    second: PC Computer - Balatro - Playing Cards_381
+  - first:
+      213: -1523556791933331242
+    second: PC Computer - Balatro - Playing Cards_382
+  - first:
+      213: -8947407099050444204
+    second: PC Computer - Balatro - Playing Cards_383
+  - first:
+      213: 734689755759650354
+    second: PC Computer - Balatro - Playing Cards_384
+  - first:
+      213: -2872706311169570561
+    second: PC Computer - Balatro - Playing Cards_385
+  - first:
+      213: 5759101261932609731
+    second: PC Computer - Balatro - Playing Cards_386
+  - first:
+      213: -6186216804073130982
+    second: PC Computer - Balatro - Playing Cards_387
+  - first:
+      213: 86436778999950749
+    second: PC Computer - Balatro - Playing Cards_388
+  - first:
+      213: 995903717819614181
+    second: PC Computer - Balatro - Playing Cards_389
+  - first:
+      213: -2637093478374659551
+    second: PC Computer - Balatro - Playing Cards_390
+  - first:
+      213: 2614004035824267702
+    second: PC Computer - Balatro - Playing Cards_391
+  - first:
+      213: 2235403983800799391
+    second: PC Computer - Balatro - Playing Cards_392
+  - first:
+      213: -7449355231005528727
+    second: PC Computer - Balatro - Playing Cards_393
+  - first:
+      213: 4349061378912183721
+    second: PC Computer - Balatro - Playing Cards_394
+  - first:
+      213: 5770849253335657332
+    second: PC Computer - Balatro - Playing Cards_395
+  - first:
+      213: 5383445149732042339
+    second: PC Computer - Balatro - Playing Cards_396
+  - first:
+      213: 7716926304750427838
+    second: PC Computer - Balatro - Playing Cards_397
+  - first:
+      213: 4543830065290537287
+    second: PC Computer - Balatro - Playing Cards_398
+  - first:
+      213: 8772250923890154164
+    second: PC Computer - Balatro - Playing Cards_399
+  - first:
+      213: -8138214467113979344
+    second: PC Computer - Balatro - Playing Cards_400
+  - first:
+      213: -7739651883053699605
+    second: PC Computer - Balatro - Playing Cards_401
+  - first:
+      213: 491868761661134910
+    second: PC Computer - Balatro - Playing Cards_402
+  - first:
+      213: 4791446200635169483
+    second: PC Computer - Balatro - Playing Cards_403
+  - first:
+      213: 6912244083620610570
+    second: PC Computer - Balatro - Playing Cards_404
+  - first:
+      213: -2486911109642253665
+    second: PC Computer - Balatro - Playing Cards_405
+  - first:
+      213: -2835305591077765535
+    second: PC Computer - Balatro - Playing Cards_406
+  - first:
+      213: 3228491704879223854
+    second: PC Computer - Balatro - Playing Cards_407
+  - first:
+      213: 3087460360832463463
+    second: PC Computer - Balatro - Playing Cards_408
+  - first:
+      213: 7702765302080221169
+    second: PC Computer - Balatro - Playing Cards_409
+  - first:
+      213: -7481275071174620193
+    second: PC Computer - Balatro - Playing Cards_410
+  - first:
+      213: 2223103802570598111
+    second: PC Computer - Balatro - Playing Cards_411
+  - first:
+      213: 8378564782152220070
+    second: PC Computer - Balatro - Playing Cards_412
+  - first:
+      213: -3715134335124083484
+    second: PC Computer - Balatro - Playing Cards_413
+  - first:
+      213: -5550286918775547172
+    second: PC Computer - Balatro - Playing Cards_414
+  - first:
+      213: -3688865709870206308
+    second: PC Computer - Balatro - Playing Cards_415
+  - first:
+      213: 1343726981330329777
+    second: PC Computer - Balatro - Playing Cards_416
+  - first:
+      213: -6625437056927738559
+    second: PC Computer - Balatro - Playing Cards_417
+  - first:
+      213: -6108464017870017554
+    second: PC Computer - Balatro - Playing Cards_418
+  - first:
+      213: -2995233981561829213
+    second: PC Computer - Balatro - Playing Cards_419
+  - first:
+      213: -5633330716796001978
+    second: PC Computer - Balatro - Playing Cards_420
+  - first:
+      213: 7933788668282631435
+    second: PC Computer - Balatro - Playing Cards_421
+  - first:
+      213: 7690138725980683692
+    second: PC Computer - Balatro - Playing Cards_422
+  - first:
+      213: -2940343068339032147
+    second: PC Computer - Balatro - Playing Cards_423
+  - first:
+      213: 412705377733946867
+    second: PC Computer - Balatro - Playing Cards_424
+  - first:
+      213: 8038671129963826727
+    second: PC Computer - Balatro - Playing Cards_425
+  - first:
+      213: -1322423320494911839
+    second: PC Computer - Balatro - Playing Cards_426
+  - first:
+      213: -3389598664964056381
+    second: PC Computer - Balatro - Playing Cards_427
+  - first:
+      213: 7922891393356102763
+    second: PC Computer - Balatro - Playing Cards_428
+  - first:
+      213: -6154473351048401407
+    second: PC Computer - Balatro - Playing Cards_429
+  - first:
+      213: 5596716132809959612
+    second: PC Computer - Balatro - Playing Cards_430
+  - first:
+      213: -4919560922767317551
+    second: PC Computer - Balatro - Playing Cards_431
+  - first:
+      213: -7475922538027227137
+    second: PC Computer - Balatro - Playing Cards_432
+  - first:
+      213: -7199538445344208079
+    second: PC Computer - Balatro - Playing Cards_433
+  - first:
+      213: -2645895564637601289
+    second: PC Computer - Balatro - Playing Cards_434
+  - first:
+      213: 6141400649028403840
+    second: PC Computer - Balatro - Playing Cards_435
+  - first:
+      213: 2807898593328647252
+    second: PC Computer - Balatro - Playing Cards_436
+  - first:
+      213: 429408577205706820
+    second: PC Computer - Balatro - Playing Cards_437
+  - first:
+      213: -1257034558831681387
+    second: PC Computer - Balatro - Playing Cards_438
+  - first:
+      213: 1709379838047593783
+    second: PC Computer - Balatro - Playing Cards_439
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playing Cards_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab9349b7bacd354189666dd2b9d4bf3
+      internalID: -406340474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23322178b89e0c47b764709591ccbd4
+      internalID: -1252397000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8932b6387473640bf5794990398332
+      internalID: -509673430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50a85e9d2b11e6478492e3330aa0021
+      internalID: -91850972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e98e2ad3602464881d2dff01913adc
+      internalID: 1561996384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1b2abdc55f35542a3dff8da27c2e86
+      internalID: 1127322650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_6
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d98402aa5eb05b458f3ac618fa0a270
+      internalID: -1387553949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_7
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc059cd0152c704419fac655d1d1b835
+      internalID: -729176152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_8
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b9a6e1de037d14eb452bc8f3b71704
+      internalID: 1926663640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940ca32966312114d85483c2f25ef4e5
+      internalID: 917744093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_10
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ad644c665cec4408a1d354da9e6230
+      internalID: -27152532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19037ae7baf55d4eb2cdba6f72a6dd5
+      internalID: 1260847340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_12
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 285
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b5e99f1aedf0b4f891e5943ab3a92d
+      internalID: -560710711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35081a7bed09d3946a41b71431915276
+      internalID: -676497084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6090e0afedbb2434aaaef378177e629d
+      internalID: 1946870467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_15
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e5be4e7d591c6408a8250f5a447615
+      internalID: 1270312304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_16
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6958ce4d189334448f3419dbd5cf91e
+      internalID: -865313968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_17
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bba074d2de8b143a05ffbb1e49902c
+      internalID: 254470818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_18
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb221027a9d51424ba18fec69916ae33
+      internalID: 1364074267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_19
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a5ef44c366cb84095e0eec0d970a96
+      internalID: 725129967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_20
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbd1fa04c3a248448e4305fd10de874
+      internalID: 2045199325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_21
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94563acb863d77047ad57a6edd11c9f4
+      internalID: 1981048027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629085e76d67e454ba89c81b9bebe7f9
+      internalID: -1171544082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_23
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ec5828fcadaf745a92b9c9245c995b
+      internalID: -1402505870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_24
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d89ffea167884f44bded2fa8b34676f
+      internalID: -435657979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_25
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 190
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac657c0a7e6e194f8af8440eecccc59
+      internalID: 644239097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793235cb391eb1a4ab51353904435b90
+      internalID: 1366065722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa05b3b9cccc2841bdbcb657497d80d
+      internalID: -1743935353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_28
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d31ac520a295af4385319687189b2dc
+      internalID: 1857731889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_29
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6204878fe460743991db525af3ae09
+      internalID: 99642156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_30
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020d4f74418c685489e481cb7e31ec67
+      internalID: -1761841557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_31
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ab556b985a9ad47960a0c96b016bbe
+      internalID: 755261231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_32
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb3db85395827d46b2c1699dcaee95a
+      internalID: -1073799441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_33
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52273a1ff1bec8945a7119dbfd1a3e5c
+      internalID: -238044232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_34
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2310fd2d5cccb0b43941535fbde0af74
+      internalID: -916243957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_35
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e23eed7f931e545afeadd56cb6f80b
+      internalID: -2110935070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_36
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f6a6de6d7252d4cbbbfbcdc89fab77
+      internalID: -1928609678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_37
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae682b18b28db4479bea86e63fa2723
+      internalID: 2092005510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_38
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 95
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf2db42494e78c4eb1203d8afb675ba
+      internalID: 770852708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca55a83c0c63e6342928c94adf0bbb30
+      internalID: -315910213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_40
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84acbbf2cebb5940be5c0c2689d6389
+      internalID: 1416292639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_41
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d96949dc8ade094a8992bec2d7ecd52
+      internalID: -407098567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_42
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979964e13b18ba64dbb2b644535ef978
+      internalID: 14734834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_43
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46a781dc729d4946be26995bbcf1988
+      internalID: -176053653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_44
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9705cf2907a33d04fbf2fc6ff7039e60
+      internalID: -638760599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_45
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b181ac4aa473c469edcb5e58f40d05
+      internalID: 1497526672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_46
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c27af8c899e8c4ea2bf96fd594e890
+      internalID: -1381902931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_47
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4a59760c8c58446b5bd7c17cd6a569
+      internalID: 319390511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_48
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9615c05bef8dbd3499ce299d88e6fa83
+      internalID: -1029611978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_49
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e099657857cbb441a46de8067acaeab
+      internalID: -1699585220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_50
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac485a0c5494d9048acc1e09d7dbdb86
+      internalID: -738549462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playing Cards_51
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 0
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7ad0e681981124389dba403c1fc14f
+      internalID: -1340628006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1b9bd4ddce114f940b970354fad7ab80
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Playing Cards_0: -406340474
+      Playing Cards_1: -1252397000
+      Playing Cards_10: -27152532
+      Playing Cards_11: 1260847340
+      Playing Cards_12: -560710711
+      Playing Cards_13: -676497084
+      Playing Cards_14: 1946870467
+      Playing Cards_15: 1270312304
+      Playing Cards_16: -865313968
+      Playing Cards_17: 254470818
+      Playing Cards_18: 1364074267
+      Playing Cards_19: 725129967
+      Playing Cards_2: -509673430
+      Playing Cards_20: 2045199325
+      Playing Cards_21: 1981048027
+      Playing Cards_22: -1171544082
+      Playing Cards_23: -1402505870
+      Playing Cards_24: -435657979
+      Playing Cards_25: 644239097
+      Playing Cards_26: 1366065722
+      Playing Cards_27: -1743935353
+      Playing Cards_28: 1857731889
+      Playing Cards_29: 99642156
+      Playing Cards_3: -91850972
+      Playing Cards_30: -1761841557
+      Playing Cards_31: 755261231
+      Playing Cards_32: -1073799441
+      Playing Cards_33: -238044232
+      Playing Cards_34: -916243957
+      Playing Cards_35: -2110935070
+      Playing Cards_36: -1928609678
+      Playing Cards_37: 2092005510
+      Playing Cards_38: 770852708
+      Playing Cards_39: -315910213
+      Playing Cards_4: 1561996384
+      Playing Cards_40: 1416292639
+      Playing Cards_41: -407098567
+      Playing Cards_42: 14734834
+      Playing Cards_43: -176053653
+      Playing Cards_44: -638760599
+      Playing Cards_45: 1497526672
+      Playing Cards_46: -1381902931
+      Playing Cards_47: 319390511
+      Playing Cards_48: -1029611978
+      Playing Cards_49: -1699585220
+      Playing Cards_5: 1127322650
+      Playing Cards_50: -738549462
+      Playing Cards_51: -1340628006
+      Playing Cards_6: -1387553949
+      Playing Cards_7: -729176152
+      Playing Cards_8: 1926663640
+      Playing Cards_9: 917744093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

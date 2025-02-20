@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30720e743ffeec469f1360c84db3da5, type: 3}
+  m_Name: InGameData
+  m_EditorClassIdentifier: 
+  <drowCards>k__BackingField:
+  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: -509673430, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: -91850972, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: 1561996384, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: 1127322650, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: -1387553949, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  - sprite: {fileID: -729176152, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
+    type: 0
+    Ability:
+      AbilityStates: 0
+  <deckUi>k__BackingField:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
