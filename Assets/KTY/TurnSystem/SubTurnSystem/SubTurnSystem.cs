@@ -29,6 +29,7 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
             await UniTask.WaitUntil(() => TurnAction != null);
         }
         Debug.Log($"턴종료{gameObject.name}");
+        Local.EventHandler.Invoke<ResetCost>(EnumType.ResetCost, ResetCost.ResetCost);
     }
     public void Register(Action ActionType)//액션 할당
     {

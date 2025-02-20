@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class UnitStatesUiView : MonoBehaviour
     public Slider EnemyDefensebar;
     public Text EnemyDefense;
 
-
+    public TextMeshProUGUI CostText;
     public void PlayerUiSet(States states)
     {
         PlayerHpbar.value = states.Hp / states.MaxHp;
@@ -28,5 +29,10 @@ public class UnitStatesUiView : MonoBehaviour
         EnemyHp.text = $"{states.Hp}/{states.MaxHp}";
         EnemyDefensebar.value = states.Defense / states.MaxDefense;
         EnemyDefense.text = $"{states.Defense} / {states.MaxDefense}";
+    }
+
+    public void CostSet(States states)
+    {
+        CostText.text = $"{states.Cost}/{states.MaxCost}";
     }
 }

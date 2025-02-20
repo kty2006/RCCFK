@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.GPUSort;
@@ -6,26 +8,28 @@ using static UnityEngine.Rendering.GPUSort;
 [CreateAssetMenu(fileName = "CardsDataBase", menuName = "Scriptable Objects/CardsDataBase")]
 public class CardsDataBase : ScriptableObject
 {
-    [field: SerializeField] public Sprite[] PlayingCards { get; set; }//Ä¸½¶È­**
-    [field: SerializeField] public string CardsImageName { get; set; }
+    [field: SerializeField] public Card[] CardData { get; set; }
     [field: SerializeField] public List<Card> AllCards { get; set; } = new();
     [field: SerializeField] public List<Card> CardDeck { get; set; } = new();
     [field: SerializeField] public List<Card> remainingCards { get; set; } = new();
+    [field: SerializeField] public int AllCardCount { get; set; }
     [field: SerializeField] public int DeckCount { get; set; }
-
-    [ContextMenu("GetCards")]
-    public void GetCardsData()
-    {
-        PlayingCards = Resources.LoadAll<Sprite>(CardsImageName);
-    }
 
     [ContextMenu("CreateAllCards")]
     public void CreateAllCards()
     {
-        for (int i = 0; i < PlayingCards.Length; i++)
+        int count = 0;
+        int index = 0;
+        while (count < 50)
         {
-            AllCards.Add(new CardBuild().Image(PlayingCards[i]).Type(i).Build());
+            count++;
+            if (index == CardData.Length)
+                index = 0;
+            if (index < CardData.Length)
+                AllCards.Add(CardData[index]);
+            index++;
         }
+
     }
 
     [ContextMenu("CardDeckSet")]
@@ -35,25 +39,26 @@ public class CardsDataBase : ScriptableObject
         {
             CardDeck.Add(AllCards[i]);
         }
+
     }
 
     public List<Card> UiGridSet()
     {
-        remainingCards.Clear();
+        remainingCards = AllCards.ToList();
         bool doublRepeat = false;
-        for (int i = 0; i < AllCards.Count; i++)
+        for (int i = 0; i < CardDeck.Count; i++)
         {
-            for (int j = 0; j < CardDeck.Count; j++)
+            for (int j = 0; j < remainingCards.Count; j++)
             {
-                if (AllCards[i].Sprite() == CardDeck[j].Sprite())
+                if (remainingCards[j].Sprite() == CardDeck[i].Sprite())
                 {
                     doublRepeat = true;
+                    remainingCards.RemoveAt(i);
                     break;
                 }
             }
             if (doublRepeat)
             { doublRepeat = false; continue; }
-            remainingCards.Add(AllCards[i]);
         }
         return remainingCards;
     }

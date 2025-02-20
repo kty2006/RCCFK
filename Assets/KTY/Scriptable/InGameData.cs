@@ -12,6 +12,7 @@ public class InGameData : ScriptableObject
     [field: SerializeField] public List<Card> DrowCards { get; set; } = new();
     [field: SerializeField] public List<GameObject> Deck { get; set; } = new();
 
+    public Dictionary<GameObject, Card> FindCardDic { get; set; } = new();
     public void DrowAdd(Card card)
     {
         DrowCards.Add(card);
@@ -80,5 +81,6 @@ public class InGameData : ScriptableObject
         BattleDeck = new();
         DrowCards = new();
         Deck = new();
+        FindCardDic = new();
     }
 }

@@ -8,9 +8,10 @@ public enum CardState { None, Drow }
 [System.Serializable]
 public class Card
 {
-    public Sprite sprite;//이미지
-    private CardType type;//타입
-    public AbillityWrapper Ability;//추가능력
+    [field: SerializeField] public Sprite sprite { get; set; }//이미지
+    [field: SerializeField] public CardType type { get; set; }//타입
+    [field: SerializeField] public int cost { get; set; }//타입
+    [field: SerializeField] public AbillityWrapper Ability { get; set; }//추가능력
 
     public Card(Sprite image, CardType type, AbillityWrapper ability)
     {
@@ -51,43 +52,43 @@ public class Card
 
 }
 
-[System.Serializable]
-public class CardBuild //빌더 패턴
-{
-    private Sprite sprite;//이미지
-    private CardType type;//타입
-    private AbillityWrapper ability = new();//추가능력
-    public CardBuild Image(Sprite sprite)
-    {
-        this.sprite = sprite;
-        return this;
-    }
+//[System.Serializable]
+//public class CardBuild //빌더 패턴
+//{
+//    private Sprite sprite;//이미지
+//    private CardType type;//타입
+//    private AbillityWrapper ability = new();//추가능력
+//    public CardBuild Image(Sprite sprite)
+//    {
+//        this.sprite = sprite;
+//        return this;
+//    }
 
-    public CardBuild Type(int number)
-    {
-        switch (number)
-        {
-            case <= 12:
-                type = CardType.Attack;
-                break;
-            case <= 25:
-                type = CardType.Defense;
-                ability.AbilityStates = number;
-                break;
-            case <= 38:
-                type = CardType.Recovery;
-                ability.AbilityStates = number;
-                break;
-            case <= 51:
-                type = CardType.Buff;
-                ability.AbilityStates = number;
-                break;
-        }
-        return this;
-    }
+//    public CardBuild Type(int number)
+//    {
+//        switch (number)
+//        {
+//            case <= 12:
+//                type = CardType.Attack;
+//                break;
+//            case <= 25:
+//                type = CardType.Defense;
+//                ability.AbilityStates = number;
+//                break;
+//            case <= 38:
+//                type = CardType.Recovery;
+//                ability.AbilityStates = number;
+//                break;
+//            case <= 51:
+//                type = CardType.Buff;
+//                ability.AbilityStates = number;
+//                break;
+//        }
+//        return this;
+//    }
 
-    public Card Build()
-    {
-        return new Card(sprite, type, ability);
-    }
-}
+//    public Card Build()
+//    {
+//        return new Card(sprite, type, ability);
+//    }
+//}

@@ -10,6 +10,7 @@ public class States //unit½ºÅÝ
     public float Lv { get; set; }
     public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; } }
     public float MaxDefense { get { return maxdefense; } set { maxdefense += value; defense = MaxDefense; } }
+    public int MaxCost { get { return maxcost; } set { maxcost += value; maxcost = cost; } }
 
     [SerializeField] private float power;
     [SerializeField] private float speed;
@@ -17,9 +18,12 @@ public class States //unit½ºÅÝ
     [SerializeField] private float defense;
     [SerializeField] private float maxhp;
     [SerializeField] private float hp;
+    [SerializeField] private int maxcost;
+    [SerializeField] private int cost;
 
     public float Power { get { return power; } set => power += value; }
     public float Defense { get { return defense; } set => Mathf.Clamp(defense += value, 0, MaxDefense); }
+    public int Cost { get { return cost; } set { Mathf.Clamp(cost = value, 0, MaxCost); } }
     public float Hp { get { return hp; } set { Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); } } }
     public float Speed { get { return speed; } set => speed += value; }
 
@@ -96,6 +100,7 @@ public class Attack : IAttack
             Unit.TargetStates.animator.SetTrigger("Hit");
             Debug.Log($"°ø°Ý{Unit.name}");
             Unit.TargetStates.StatesUiSet();
+            Unit.StatesUiSet();
         });
     }
 }

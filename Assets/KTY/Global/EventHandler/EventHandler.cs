@@ -31,11 +31,15 @@ public enum EnumType
     TurnAdd,
     TurnRmove,
     ContentsMove,
+    ResetCost,
+
 }
 public enum Turn { TurnSystem }
 public enum TurnAdd { TurnSystem }
 public enum UnitDead { UnitDead }
 public enum EnemyTurnSelect { EnemyTurnSelect }
+
+public enum ResetCost { ResetCost }
 
 public class EventHandler
 {
