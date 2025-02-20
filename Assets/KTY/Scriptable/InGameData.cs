@@ -8,24 +8,23 @@ using UnityEngine.UI;
 public class InGameData : ScriptableObject
 {
 
-    [field: SerializeField] public Queue<Card> battleDeck { get; set; } = new();
-    [field: SerializeField] public List<Card> drowCards { get; set; } = new();
-    [field: SerializeField] public List<GameObject> deckUi { get; set; } = new();
+    [field: SerializeField] public Queue<Card> BattleDeck { get; set; } = new();
+    [field: SerializeField] public List<Card> DrowCards { get; set; } = new();
+    [field: SerializeField] public List<GameObject> Deck { get; set; } = new();
 
     public void DrowAdd(Card card)
     {
-        drowCards.Add(card);
+        DrowCards.Add(card);
     }
 
     #region RandomCardList
     public Card FindCard(Sprite obj)
     {
-        for (int i = 0; i < drowCards.Count; i++)
+        for (int i = 0; i < DrowCards.Count; i++)
         {
-            if (drowCards[i].Sprite() == obj)
+            if (DrowCards[i].Sprite() == obj)
             {
-                Debug.Log(drowCards[i].Sprite());
-                return drowCards[i];
+                return DrowCards[i];
             }
         }
         return null;
@@ -34,7 +33,7 @@ public class InGameData : ScriptableObject
     public Card CardGet(int index)
     {
         int num = 0;
-        foreach (var card in battleDeck)
+        foreach (var card in BattleDeck)
         {
             if (num == index)
                 return card;
@@ -47,40 +46,39 @@ public class InGameData : ScriptableObject
     #region Deck
     public void DeckAdd(GameObject card)
     {
-        deckUi.Add(card);
+        Deck.Add(card);
     }
-
 
     public void DeckReMove(GameObject card)
     {
-        deckUi.Remove(card);
+        Deck.Remove(card);
     }
 
     public void AllDeckReMove()
     {
-        for (int i = 0; i < deckUi.Count; i++)
+        for (int i = 0; i < Deck.Count; i++)
         {
-            Destroy(deckUi[i]);
+            Destroy(Deck[i]);
         }
-        deckUi.Clear();
+        Deck.Clear();
     }
 
     public int DeckAllReMove()//오브젝트풀링으로 고쳐야함
     {
-        int count = deckUi.Count;
+        int count = Deck.Count;
         for (int i = 0; i < count; i++)
         {
-            Destroy(deckUi[i]);
+            Destroy(Deck[i]);
         }
-        deckUi.Clear();
+        Deck.Clear();
         return count;
     }
     #endregion
 
     public void SettingDack()//필수 카드 새로 받을때마다 실행시켜줘야함
     {
-        battleDeck = new();
-        drowCards = new();
-        deckUi = new();
+        BattleDeck = new();
+        DrowCards = new();
+        Deck = new();
     }
 }

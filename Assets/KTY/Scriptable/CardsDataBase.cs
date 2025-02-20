@@ -7,9 +7,7 @@ using static UnityEngine.Rendering.GPUSort;
 public class CardsDataBase : ScriptableObject
 {
     [field: SerializeField] public Sprite[] PlayingCards { get; set; }//Ä¸½¶È­**
-
     [field: SerializeField] public string CardsImageName { get; set; }
-
     [field: SerializeField] public List<Card> AllCards { get; set; } = new();
     [field: SerializeField] public List<Card> CardDeck { get; set; } = new();
     [field: SerializeField] public List<Card> remainingCards { get; set; } = new();
@@ -39,7 +37,6 @@ public class CardsDataBase : ScriptableObject
         }
     }
 
-
     public List<Card> UiGridSet()
     {
         remainingCards.Clear();
@@ -60,10 +57,8 @@ public class CardsDataBase : ScriptableObject
         }
         return remainingCards;
     }
-
     public void ChangeCard(List<int> Cards)
     {
-        Debug.Log(Cards.Count);
         Card savCard = remainingCards[Cards[0]];
         remainingCards[Cards[0]] = CardDeck[Cards[1]];
         CardDeck[Cards[1]] = savCard;

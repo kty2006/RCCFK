@@ -4,46 +4,53 @@ using UnityEditor;
 using UnityEngine;
 
 [Serializable]
-public class States
+public class States //unit스텟 
 {
-    [field: SerializeField] public float Lv { get; set; }
-    [field: SerializeField] public float Attack { get; set; }
-    [field: SerializeField] public float MaxDefense { get; set; }
-    [field: SerializeField] public float Defense { get; set; }
-    [field: SerializeField] public float MaxHp { get; set; }
-    public float hp;
-    public float Hp { get { return hp; } set { hp = value; if (hp <= 0) { DeadFunc?.Invoke(); } } }
-    [field: SerializeField] public float speed { get; set; }
-
     public Action DeadFunc;
+    public float Lv { get; set; }
+    public float MaxHp { get { return MaxHp; } set { MaxHp = value; hp = MaxHp; } }
+    public float MaxDefense { get { return MaxDefense; } set { MaxDefense = value; defense = MaxDefense; } }
+
+    [SerializeField] private float power;
+    [SerializeField] private float defense;
+    [SerializeField] private float speed;
+    [SerializeField] private float hp;
+
+    public float Power { get { return power; } set => power += value; }
+    public float Defense { get { return defense; } set => Mathf.Clamp(defense += value, 0, MaxDefense); }
+    public float Hp { get { return hp; } set { Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); } } }
+    public float Speed { get { return speed; } set => speed += value; }
+
+
 }
+
 public abstract class Unit : MonoBehaviour
 {
-    public States UnitStates;
-    public Unit TargetStates;
-
-    public Action actionType { get; set; }
+    [field: SerializeField] public States UnitStates { get; set; }
+    [field: SerializeField] public Unit TargetStates { get; set; }
     [field: SerializeField] public Animator animator { get; private set; }
-
+    public Action EndAniFunc { get; set; }
     protected Action<States> StatesSetFunc { get; set; }
+
+
     public virtual void Start()
     {
         StatesUiSet();
         UnitStates.DeadFunc = Die;
     }
 
-    public void ToIdle()
+    public void ToIdle()//애니메이션 종료후 idle상태로 돌리기
     {
         animator.SetTrigger("ToIdle");
     }
 
     protected abstract void Die();
 
-    public abstract void StatesUiSet();
+    public abstract void StatesUiSet();//스텟ui동기화
 
-    protected void StartAction()
+    protected void StartAction()//애니메이션 끝났을때 실행할 함수
     {
-        actionType?.Invoke();
+        EndAniFunc?.Invoke();
     }
 
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
@@ -81,9 +88,9 @@ public class Attack : IAttack
     public void Invoke()
     {
         Unit.animator.SetTrigger("Attack");
-        Unit.actionType = (() =>
+        Unit.EndAniFunc = (() =>
         {
-            Unit.TargetStates.UnitStates.Hp -= Unit.UnitStates.Attack;
+            Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Power;
             Unit.TargetStates.animator.SetTrigger("Hit");
             Debug.Log($"공격{Unit.name}");
             Unit.TargetStates.StatesUiSet();
@@ -104,9 +111,9 @@ public class Defense : IDefense
     public void Invoke()
     {
         Unit.animator.SetTrigger("Defense");
-        Unit.actionType = (() =>
+        Unit.EndAniFunc = (() =>
         {
-            Unit.UnitStates.Defense += States;
+            Unit.UnitStates.Defense = States;
             Unit.StatesUiSet();
             Debug.Log($"방어력회복{Unit.name}");
         });
@@ -127,9 +134,9 @@ public class Recovery : IRecovery
     public void Invoke()
     {
         Unit.animator.SetTrigger("Defense");
-        Unit.actionType = (() =>
+        Unit.EndAniFunc = (() =>
         {
-            Unit.UnitStates.Hp += States;
+            Unit.UnitStates.Hp = States;
             Unit.StatesUiSet();
             Debug.Log($"회복{Unit.name}");
         });
@@ -149,9 +156,9 @@ public class Buff : IBuff
     public void Invoke()
     {
         Unit.animator.SetTrigger("Buff");
-        Unit.actionType = (() =>
+        Unit.EndAniFunc = (() =>
         {
-            Unit.TargetStates.UnitStates.Hp += States;
+            Unit.TargetStates.UnitStates.Hp = States;
             Unit.StatesUiSet();
             Debug.Log($"스텟강화{Unit.name}");
         });

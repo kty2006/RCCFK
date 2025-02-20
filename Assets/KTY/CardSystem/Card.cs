@@ -8,18 +8,15 @@ public enum CardState { None, Drow }
 [System.Serializable]
 public class Card
 {
-    //특수카드같은경우 특수능력 실행 클래스를 만들고  종류를 enum으로 만들어 특수카드 능력 실행시 Card클래스에 상태만 특수능력 클래스 함수에 넘겨주어 타입에 따라 능력실행되게 
-    [SerializeField] private Sprite sprite;//이미지
-    [SerializeField] private CardType type;//타입
-    public string name { get; set; }
+    private Sprite sprite;//이미지
+    private CardType type;//타입
     public AbillityWrapper Ability;//추가능력
 
-    public Card(Sprite image, CardType type, AbillityWrapper ability, string name)
+    public Card(Sprite image, CardType type, AbillityWrapper ability)
     {
         this.sprite = image;
         this.type = type;
         this.Ability = ability;
-        this.name = name;
     }
 
     public Sprite Sprite()
@@ -55,19 +52,16 @@ public class Card
 }
 
 [System.Serializable]
-public class CardBuild
+public class CardBuild //빌더 패턴
 {
-    [SerializeField] private Sprite sprite;//이미지
-    [SerializeField] private CardType type;//타입
-    [SerializeField] private AbillityWrapper ability = new();//추가능력
-    [SerializeField] private string name;
+    private Sprite sprite;//이미지
+    private CardType type;//타입
+    private AbillityWrapper ability = new();//추가능력
     public CardBuild Image(Sprite sprite)
     {
         this.sprite = sprite;
         return this;
     }
-
-
 
     public CardBuild Type(int number)
     {
@@ -94,6 +88,6 @@ public class CardBuild
 
     public Card Build()
     {
-        return new Card(sprite, type, ability, name);
+        return new Card(sprite, type, ability);
     }
 }

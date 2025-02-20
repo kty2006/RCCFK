@@ -17,7 +17,7 @@ public class BattleManager : MonoBehaviour
     public void StartBattle()
     {
         Enemy = EnemyFactory.CurrentGameObject;
-        if (Player.UnitStates.speed > Enemy.UnitStates.speed)
+        if (Player.UnitStates.Speed > Enemy.UnitStates.Speed)
         {
             NextUnit = Player;
             GetTurn();
