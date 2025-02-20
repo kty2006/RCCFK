@@ -8,12 +8,14 @@ public class States //unit½ºÅÝ
 {
     public Action DeadFunc;
     public float Lv { get; set; }
-    public float MaxHp { get { return MaxHp; } set { MaxHp = value; hp = MaxHp; } }
-    public float MaxDefense { get { return MaxDefense; } set { MaxDefense = value; defense = MaxDefense; } }
+    public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; } }
+    public float MaxDefense { get { return maxdefense; } set { maxdefense += value; defense = MaxDefense; } }
 
     [SerializeField] private float power;
-    [SerializeField] private float defense;
     [SerializeField] private float speed;
+    [SerializeField] private float maxdefense;
+    [SerializeField] private float defense;
+    [SerializeField] private float maxhp;
     [SerializeField] private float hp;
 
     public float Power { get { return power; } set => power += value; }

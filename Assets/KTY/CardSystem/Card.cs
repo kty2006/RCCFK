@@ -8,7 +8,7 @@ public enum CardState { None, Drow }
 [System.Serializable]
 public class Card
 {
-    private Sprite sprite;//이미지
+    public Sprite sprite;//이미지
     private CardType type;//타입
     public AbillityWrapper Ability;//추가능력
 

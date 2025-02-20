@@ -194,15 +194,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56be18ee6326b3f49a5f3ea4fa85acce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitStates:
-    <Lv>k__BackingField: 0
-    <Attack>k__BackingField: 5
-    <MaxDefense>k__BackingField: 10
-    <Defense>k__BackingField: 10
-    <MaxHp>k__BackingField: 10
+  <UnitStates>k__BackingField:
+    power: 5
+    speed: 2
+    maxdefense: 10
+    defense: 10
+    maxhp: 10
     hp: 10
-    <speed>k__BackingField: 4
-  TargetStates: {fileID: 0}
+  <TargetStates>k__BackingField: {fileID: 0}
   <animator>k__BackingField: {fileID: 8597032558010261669}
 --- !u!4 &8597032558003064695 stripped
 Transform:
