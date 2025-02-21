@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3895858251277027509}
   - component: {fileID: 957136718439858138}
   - component: {fileID: 595748344756540843}
-  - component: {fileID: 6831370353200462536}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -85,18 +84,6 @@ CapsuleCollider:
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
---- !u!114 &6831370353200462536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6867165750553887375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fde32f2e7f1eab42bebe04a64f13a87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8597032558002935237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176,6 +163,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100050, guid: e57e9b8cd5e115f4f8d7736473e5c7fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3494436584717948716}
+    - targetCorrespondingSourceObject: {fileID: 100050, guid: e57e9b8cd5e115f4f8d7736473e5c7fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4395285943749678191}
   m_SourcePrefab: {fileID: 100100000, guid: e57e9b8cd5e115f4f8d7736473e5c7fd, type: 3}
 --- !u!1 &8597032558002836247 stripped
 GameObject:
@@ -195,14 +185,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <UnitStates>k__BackingField:
+    lv: 0
     power: 5
     speed: 2
     maxdefense: 10
     defense: 10
     maxhp: 10
     hp: 10
+    maxcost: 0
+    cost: 0
+    exp: 10
+    <SetExp>k__BackingField: 10
   <TargetStates>k__BackingField: {fileID: 0}
   <animator>k__BackingField: {fileID: 8597032558010261669}
+--- !u!114 &4395285943749678191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597032558002836247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fde32f2e7f1eab42bebe04a64f13a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8597032558003064695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400050, guid: e57e9b8cd5e115f4f8d7736473e5c7fd, type: 3}

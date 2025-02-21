@@ -23,7 +23,9 @@ public interface UnitBehaviour
 [System.Serializable]
 public class AbillityWrapper
 {
+    [HideInInspector] public CardType type;
     [SerializeField] public Action AbillityFunc;
+    [SerializeField] public int RepNumber;
     [SerializeField] public float AbilityStates;
 }
 

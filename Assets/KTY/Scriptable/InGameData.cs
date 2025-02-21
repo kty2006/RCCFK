@@ -63,17 +63,6 @@ public class InGameData : ScriptableObject
         }
         Deck.Clear();
     }
-
-    public int DeckAllReMove()//오브젝트풀링으로 고쳐야함
-    {
-        int count = Deck.Count;
-        for (int i = 0; i < count; i++)
-        {
-            Destroy(Deck[i]);
-        }
-        Deck.Clear();
-        return count;
-    }
     #endregion
 
     public void SettingDack()//필수 카드 새로 받을때마다 실행시켜줘야함

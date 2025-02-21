@@ -14,6 +14,7 @@ public enum EnumType
     PlayerSpecial,
     PlayerStatesUi,
     PlayerDie,
+    GetExp,
 
     EnemyTurnAdd,
     EnemyTurnRemove,
@@ -31,7 +32,9 @@ public enum EnumType
     TurnAdd,
     TurnRmove,
     ContentsMove,
+    DieUi,
     ResetCost,
+    CardDrowUp,
 
 }
 public enum Turn { TurnSystem }

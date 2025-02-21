@@ -5,8 +5,9 @@ using UnityEngine;
 public class TurnSystem
 {
     private List<ITurnObj> turns = new(); //턴을 가지고 있는 리스트
-    public bool turnproress { get; set; } = true;
-
+    public bool Turnproress { get; set; } = true;
+    public bool Turnskip { get; set; } = false;
+    private ITurnObj currObj;
     public void Register(ITurnObj turn) //턴 할당
     {
         turns.Add(turn);
@@ -14,12 +15,18 @@ public class TurnSystem
 
     public void UnRegister() //턴 해제
     {
-        turns.Remove(turns.LastOrDefault<ITurnObj>());
+        int index = (currObj == turns[0]) ? 1 : 0;
+        turns.Remove(turns[index]);
+    }
+
+    public void Reset()
+    {
+        turns.Clear();
     }
 
     public bool TurnStart(bool turnstart)//
     {
-        return turnproress = turnstart;
+        return Turnproress = turnstart;
     }
 
     public async UniTask Invoke() //턴 실행
@@ -28,9 +35,14 @@ public class TurnSystem
         {
             for (int i = 0; i < turns.Count; i++)
             {
-                await UniTask.WaitUntil(() => turnproress);
+                await UniTask.WaitUntil(() => Turnproress);
                 TurnStart(false);
-                turns[i].Invoke();
+                if (!Turnskip)
+                {
+                    currObj = turns[i];
+                    currObj.Invoke();
+                    Turnskip = false;
+                }
             }
             //turns.Clear();
             //TurnStart(false);

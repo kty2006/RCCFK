@@ -16,8 +16,9 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
     public float Spaceing;
     public Unit costState;
 
-    private Vector3[] CardsPos = new Vector3[8];
-    private int cardIndex;
+    private Vector3[] CardsPos = new Vector3[20];
+    private int drowCount = 8;
+    private int drowIndex = 0;
     private GameObject clickedObject;
     private bool minCostCheck = false;
 
@@ -26,8 +27,10 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         InGameData.SettingDack();
         CardsPosSet();
         CreateCards(CardsData.CardDeck.Count);
-        CardDrow(CardsPos.Length);
-        Local.EventHandler.Register<UnitDead>(EnumType.EnemyDie, (unitDead) => { InGameData.AllDeckReMove(); CreateCards(CardsData.CardDeck.Count); CardDrow(CardsPos.Length); });
+        CardDrow(drowCount);
+        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { InGameData.AllDeckReMove(); CreateCards(drowCount); CardDrow(CardsPos.Length); });
+        Local.EventHandler.Register<EnemyTurnSelect>(EnumType.EnemyTurnSelect, (turnselect) => { InGameData.AllDeckReMove(); CardDrow(drowCount); drowCount = 8; });
+        Local.EventHandler.Register<int>(EnumType.CardDrowUp, (count) => { drowCount += count; });
     }
 
     public void CardDrow(int count)//Ä«µå »Ì±â
@@ -35,7 +38,15 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         Card card;
         for (int i = 0; i < count; i++)
         {
-            card = InGameData.BattleDeck.Dequeue();
+            card = CardsData.CardDeck[drowIndex];
+            if (drowIndex < CardsData.CardDeck.Count - 1)
+            {
+                drowIndex++;
+            }
+            else
+            {
+                drowIndex = 0;
+            }
             GameObject cardObject = Instantiate(cardPrefab, cards.transform);
             cardObject.transform.GetChild(0).GetComponent<Image>().sprite = card.Sprite();
             InGameData.DeckAdd(cardObject);
@@ -112,7 +123,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
                 CardClickAni(clickedObject).Forget();
                 Local.EventHandler.Invoke<Action>(EnumType.PlayerTurnAdd, card.Ability.AbillityFunc);
                 InGameData.DeckReMove(clickObject);
-                CardDrow(1);
+                CardsSort();
             }
         }
     }

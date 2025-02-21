@@ -11,7 +11,8 @@ public class EnemyController : MonoBehaviour
 
     public void SelectAction()
     {
-        int num = Random.Range(0, 5);
+        //int num = Random.Range(0, 5);
+        int num = 0;
         switch (num)
         {
             case 0:

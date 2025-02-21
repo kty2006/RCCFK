@@ -9,6 +9,7 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
     private bool turnEnd = false;
     public virtual void Start()
     {
+        
     }
 
     public bool Invoke()//액션 실행
@@ -23,8 +24,8 @@ public class SubTurnSystem : MonoBehaviour, ITurnObj, IEvent
         {
             TurnAction?.Invoke();
             TurnAction = null;
-            await UniTask.WaitUntil(() => TurnAction != null || Local.TurnSystem.turnproress);
-            if (Local.TurnSystem.turnproress)
+            await UniTask.WaitUntil(() => TurnAction != null || Local.TurnSystem.Turnproress);
+            if (Local.TurnSystem.Turnproress)
                 break;
             await UniTask.WaitUntil(() => TurnAction != null);
         }

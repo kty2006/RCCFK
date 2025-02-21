@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public enum CardType { Attack, Defense, Recovery, Buff, Special }
+public enum CardType { Attack, Defense, Recovery, Buff, TargetTurnReove, CardDrowUp, TargetPowerDown, TargetDefenseDown }
 public enum CardState { None, Drow }
 [System.Serializable]
 public class Card
@@ -18,6 +18,7 @@ public class Card
         this.sprite = image;
         this.type = type;
         this.Ability = ability;
+
     }
 
     public Sprite Sprite()
@@ -32,63 +33,34 @@ public class Card
 
     public void SelectAction()
     {
-
+        Ability.type = type;
         switch (type)
         {
-            case <= CardType.Attack:
+            case CardType.Attack:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerAttack, Ability);
                 break;
-            case <= CardType.Defense:
+            case CardType.Defense:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerDefense, Ability);
                 break;
-            case <= CardType.Recovery:
+            case CardType.Recovery:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerRecovery, Ability);
                 break;
-            case <= CardType.Buff:
+            case CardType.Buff:
                 Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerBuff, Ability);
+                break;
+            case CardType.CardDrowUp:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerSpecial, Ability);
+                break;
+            case CardType.TargetTurnReove:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerSpecial, Ability);
+                break;
+            case CardType.TargetDefenseDown:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerSpecial, Ability);
+                break;
+            case CardType.TargetPowerDown:
+                Local.EventHandler.Invoke<AbillityWrapper>(EnumType.PlayerSpecial, Ability);
                 break;
         }
     }
 
 }
-
-//[System.Serializable]
-//public class CardBuild //빌더 패턴
-//{
-//    private Sprite sprite;//이미지
-//    private CardType type;//타입
-//    private AbillityWrapper ability = new();//추가능력
-//    public CardBuild Image(Sprite sprite)
-//    {
-//        this.sprite = sprite;
-//        return this;
-//    }
-
-//    public CardBuild Type(int number)
-//    {
-//        switch (number)
-//        {
-//            case <= 12:
-//                type = CardType.Attack;
-//                break;
-//            case <= 25:
-//                type = CardType.Defense;
-//                ability.AbilityStates = number;
-//                break;
-//            case <= 38:
-//                type = CardType.Recovery;
-//                ability.AbilityStates = number;
-//                break;
-//            case <= 51:
-//                type = CardType.Buff;
-//                ability.AbilityStates = number;
-//                break;
-//        }
-//        return this;
-//    }
-
-//    public Card Build()
-//    {
-//        return new Card(sprite, type, ability);
-//    }
-//}
