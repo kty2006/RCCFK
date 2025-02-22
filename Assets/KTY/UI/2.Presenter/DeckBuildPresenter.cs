@@ -18,7 +18,6 @@ public class DeckBuildPresenter : MonoBehaviour
     }
     public void ChangeCard(List<int> Cards)
     {
-        Debug.Log(Cards.Count);
         CardModel.ChangeCard(Cards);
         View.CardChange(Cards);
     }

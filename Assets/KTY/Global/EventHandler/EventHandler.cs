@@ -35,6 +35,8 @@ public enum EnumType
     DieUi,
     ResetCost,
     CardDrowUp,
+    SaveData,
+    LoadData,
 
 }
 public enum Turn { TurnSystem }

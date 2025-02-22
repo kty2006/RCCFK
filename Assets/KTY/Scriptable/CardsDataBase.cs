@@ -35,6 +35,7 @@ public class CardsDataBase : ScriptableObject
     [ContextMenu("CardDeckSet")]
     public void CardDeeckSet()
     {
+        CardDeck.Clear();
         for (int i = 0; i < DeckCount; i++)
         {
             CardDeck.Add(AllCards[i]);

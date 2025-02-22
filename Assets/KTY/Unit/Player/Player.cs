@@ -2,10 +2,12 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
+[DefaultExecutionOrder(0)]
 public class Player : Unit
 {
     public void Awake()
     {
+        
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerAttack, (unit) => { SetUnitAttack(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerDefense, (unit) => { SetUnitDefense(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerRecovery, (unit) => { SetUnitRecovery(unit); });
@@ -13,6 +15,8 @@ public class Player : Unit
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerSpecial, (unit) => { SetUnitSpecial(unit); });
         Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { UnitStates.Cost = UnitStates.MaxCost; UnitStates.Exp = enemyState.SetExp; StatesUiSet(); });
         Local.EventHandler.Register<ResetCost>(EnumType.ResetCost, (reset) => { UnitStates.Cost = UnitStates.MaxCost; StatesUiSet(); });
+        Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.States = UnitStates; });
+        Local.EventHandler.Register<int>(EnumType.LoadData, (num) => { UnitStates = Local.DataSave.States; Local.Json.ReadJson();});
     }
 
     public override void StatesUiSet()

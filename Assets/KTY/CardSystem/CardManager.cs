@@ -28,7 +28,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         CardsPosSet();
         CreateCards(CardsData.CardDeck.Count);
         CardDrow(drowCount);
-        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { InGameData.AllDeckReMove(); CreateCards(drowCount); CardDrow(CardsPos.Length); });
+        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { drowIndex = 0; InGameData.AllDeckReMove(); CardDrow(drowCount); });
         Local.EventHandler.Register<EnemyTurnSelect>(EnumType.EnemyTurnSelect, (turnselect) => { InGameData.AllDeckReMove(); CardDrow(drowCount); drowCount = 8; });
         Local.EventHandler.Register<int>(EnumType.CardDrowUp, (count) => { drowCount += count; });
     }
@@ -99,12 +99,10 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
 
     public void CreateCards(int count)//배틀에 들어갈 카드들 지정
     {
-        InGameData.BattleDeck.Clear();
         InGameData.DrowCards.Clear();
         for (int i = 0; i < count; i++)
         {
             CardsData.CardDeck[i].SelectAction();
-            InGameData.BattleDeck.Enqueue(CardsData.CardDeck[i]);
         }
     }
 

@@ -22,14 +22,15 @@ public class Enemy : Unit
     protected override void Die()
     {
         animator.SetTrigger("Die");
-        Local.Stage += 1;
-
+        Local.Stage = 1;
+        
     }
 
     public void DieInside()
     {
         Local.EventHandler.Invoke<States>(EnumType.EnemyDie, UnitStates);
         Local.EventHandler.Invoke<States>(EnumType.DieUi, UnitStates);
+        Local.EventHandler.Invoke<DataSave>(EnumType.SaveData, Local.DataSave);
         Destroy(gameObject.transform.parent.gameObject);
     }
 

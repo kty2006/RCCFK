@@ -1712,6 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15926f90b77f4144fade23c7df1cde7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CardsDataBase: {fileID: 11400000, guid: 29ea715e0a584a745b30f1bf89916321, type: 2}
 --- !u!4 &317259727
 Transform:
   m_ObjectHideFlags: 0

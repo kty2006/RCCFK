@@ -15,5 +15,6 @@ public class DieUiPresenter : MonoBehaviour
     {
         StageFunc = DieUiView.StageSet;
         Local.EventHandler.Register<States>(EnumType.DieUi, StageFunc);
+        Local.EventHandler.Register<States>(EnumType.PlayerStatesUi, StageFunc);
     }
 }

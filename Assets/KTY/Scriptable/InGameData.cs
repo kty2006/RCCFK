@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class InGameData : ScriptableObject
 {
 
-    [field: SerializeField] public Queue<Card> BattleDeck { get; set; } = new();
     [field: SerializeField] public List<Card> DrowCards { get; set; } = new();
     [field: SerializeField] public List<GameObject> Deck { get; set; } = new();
 
@@ -29,18 +28,6 @@ public class InGameData : ScriptableObject
             }
         }
         return null;
-    }
-
-    public Card CardGet(int index)
-    {
-        int num = 0;
-        foreach (var card in BattleDeck)
-        {
-            if (num == index)
-                return card;
-            ++num;
-        }
-        return null; //널 반환은 X
     }
     #endregion
 
@@ -67,7 +54,6 @@ public class InGameData : ScriptableObject
 
     public void SettingDack()//필수 카드 새로 받을때마다 실행시켜줘야함
     {
-        BattleDeck = new();
         DrowCards = new();
         Deck = new();
         FindCardDic = new();
