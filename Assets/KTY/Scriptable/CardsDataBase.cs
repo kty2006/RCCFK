@@ -8,6 +8,8 @@ using static UnityEngine.Rendering.GPUSort;
 [CreateAssetMenu(fileName = "CardsDataBase", menuName = "Scriptable Objects/CardsDataBase")]
 public class CardsDataBase : ScriptableObject
 {
+    [field: SerializeField] public int MaxCost = 100;
+    [field: SerializeField] public int CurrentCost = 0;
     [field: SerializeField] public Card[] CardData { get; set; }
     [field: SerializeField] public List<Card> AllCards { get; set; } = new();
     [field: SerializeField] public List<Card> CardDeck { get; set; } = new();
@@ -38,7 +40,13 @@ public class CardsDataBase : ScriptableObject
         CardDeck.Clear();
         for (int i = 0; i < DeckCount; i++)
         {
-            CardDeck.Add(AllCards[i]);
+            if (CurrentCost + AllCards[i].cost <= 100)
+            {
+                CardDeck.Add(AllCards[i]);
+                CurrentCost += AllCards[i].cost;
+            }
+            else
+                break;
         }
 
     }
@@ -63,10 +71,43 @@ public class CardsDataBase : ScriptableObject
         }
         return remainingCards;
     }
-    public void ChangeCard(List<int> Cards)
+    public bool ChangeCard(List<int> Cards)
     {
-        Card savCard = remainingCards[Cards[0]];
-        remainingCards[Cards[0]] = CardDeck[Cards[1]];
-        CardDeck[Cards[1]] = savCard;
+        if (CardDeck.Count > Cards[1] && remainingCards.Count > Cards[0])
+        {
+            if (CardDeck.Count > Cards[1])
+            {
+                if (CurrentCost - CardDeck[Cards[1]].cost + remainingCards[Cards[0]].cost <= MaxCost)
+                {
+                    CurrentCost -= CardDeck[Cards[1]].cost;
+                    CurrentCost += remainingCards[Cards[0]].cost;
+                    Card savCard = remainingCards[Cards[0]];
+                    remainingCards[Cards[0]] = CardDeck[Cards[1]];
+                    CardDeck[Cards[1]] = savCard;
+                    return true;
+                }
+            }
+            else
+            {
+                if (CurrentCost + remainingCards[Cards[0]].cost <= MaxCost)
+                {
+                    CurrentCost += remainingCards[Cards[0]].cost;
+                    CardDeck.Add(remainingCards[Cards[0]]);
+                    remainingCards.Remove(remainingCards[Cards[0]]);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void CardRelease(List<int> Cards)
+    {
+        if (CardDeck.Count > Cards[0])
+        {
+            remainingCards.Add(CardDeck[Cards[0]]);
+            CurrentCost -= CardDeck[Cards[0]].cost;
+            CardDeck.Remove(CardDeck[Cards[0]]);
+        }
     }
 }
