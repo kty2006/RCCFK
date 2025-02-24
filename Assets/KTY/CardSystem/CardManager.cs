@@ -52,6 +52,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
             InGameData.DeckAdd(cardObject);
             InGameData.DrowAdd(card);
             InGameData.FindCardDic.Add(cardObject, card);
+            //Debug.Log("Ä«µå»Ì±â");
         }
         CardsSort();
     }
