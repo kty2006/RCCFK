@@ -36,7 +36,8 @@ public class EquipmentUiView : MonoBehaviour, IPointerClickHandler
             {
                 if (wearequipment[i].EquipmentType == SelectEquipmentss[j].itemTyp)
                 {
-                    if (SelectEquipmentss[i].TryGetComponent(out Image image))
+                    Debug.Log($"{wearequipment[i].EquipmentType} : {SelectEquipmentss[j].itemTyp}");
+                    if (SelectEquipmentss[j].TryGetComponent(out Image image))
                     {
                         image.sprite = wearequipment[i].EquipmentIcon;
                     }
@@ -73,10 +74,11 @@ public class EquipmentUiView : MonoBehaviour, IPointerClickHandler
                     }
                 }
             }
-            InformationUI.ActiveCheck();
+            InformationUI.WearCheck(true);
         }
         else
         {
+            InformationUI.WearCheck(false);
             currentEquipment = equipment;
             InformationUI.EquipmentName.text = equipment.EquipmentName;
             InformationUI.EquipmentRank.text = equipment.EquipmentGrade.ToString();

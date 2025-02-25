@@ -17,6 +17,7 @@ public class CardsDataBase : ScriptableObject
     [field: SerializeField] public int AllCardCount { get; set; }
     [field: SerializeField] public int DeckCount { get; set; }
 
+    
     [ContextMenu("CreateAllCards")]
     public void CreateAllCards()
     {
@@ -40,7 +41,7 @@ public class CardsDataBase : ScriptableObject
         CardDeck.Clear();
         for (int i = 0; i < DeckCount; i++)
         {
-            if (CurrentCost + AllCards[i].cost <= 100)
+            if (CurrentCost + AllCards[i].cost <= MaxCost)
             {
                 CardDeck.Add(AllCards[i]);
                 CurrentCost += AllCards[i].cost;

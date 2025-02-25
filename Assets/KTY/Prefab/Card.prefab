@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0000085831}
-  m_SizeDelta: {x: 200, y: 272.89}
+  m_AnchoredPosition: {x: -0.00041854, y: 0.00046062}
+  m_SizeDelta: {x: 240.28, y: 331.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4620734939278130651
 CanvasRenderer:
@@ -112,8 +112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 31.8111}
-  m_SizeDelta: {x: 200, y: 283.7389}
+  m_AnchoredPosition: {x: 65.96417, y: -103.561745}
+  m_SizeDelta: {x: 240.2762, y: 331.4349}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8727737195501053884
 CanvasRenderer:
@@ -174,7 +174,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5621528465429330840}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5d8e1fef040e6df42afc9427473640cc, type: 2}
   m_CullingMode: 0

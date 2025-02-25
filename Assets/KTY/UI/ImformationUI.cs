@@ -20,7 +20,7 @@ public class ImformationUI : MonoBehaviour, IPointerClickHandler
     public void Awake()
     {
         mountingBtn.onClick.AddListener(() => { equipmentWearFunc?.Invoke(); StatesSum();  });
-        clearBtn.onClick.AddListener(() => { equipmentTakeOffFunc?.Invoke(MyEquipmentData.WearEquipments); StatesMinus(); ActiveCheck(); });
+        clearBtn.onClick.AddListener(() => { equipmentTakeOffFunc?.Invoke(MyEquipmentData.WearEquipments); StatesMinus();  });
         gameObject.SetActive(false);
     }
     public void StatesSum()
@@ -38,9 +38,9 @@ public class ImformationUI : MonoBehaviour, IPointerClickHandler
         gameObject.SetActive(false);
     }
 
-    public void ActiveCheck()
+    public void WearCheck(bool iswear)
     {
-        if (mountingBtn.gameObject.activeSelf)
+        if (iswear)
         {
             mountingBtn.gameObject.SetActive(false);
             clearBtn.gameObject.SetActive(true);

@@ -29,15 +29,15 @@ public class Store : MonoBehaviour
 
     private void BindButtons()
     {
-        int half = singleDrawButtons.Length / 2;
 
-        for (int i = 0; i < half; i++)
+        for (int i = 0; i < singleDrawButtons.Length; i++)
         {
             PickType pickType = (PickType)i;
+            int onDrow = 100 * (i + 1);
+            int tenDrow = 1000 * (i + 1);
+            singleDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > onDrow) { StoreEquipmentPickUp(pickType, 1); Local.Gold -= onDrow; Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1); } });
+            tenDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > tenDrow) { StoreEquipmentPickUp(pickType, 10); Local.Gold -= tenDrow; Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1); } });
 
-            singleDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > 100) { StoreEquipmentPickUp(pickType, 1); Local.Gold -= 100; } });
-            tenDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > 1000) { StoreEquipmentPickUp(pickType, 10); Local.Gold -= 1000; } });
-            Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1);
             //singleDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 1));
             //tenDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 10));
         }

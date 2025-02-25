@@ -102,7 +102,7 @@ MonoBehaviour:
     lv: 0
     setpower: 0
     power: 10
-    speed: 20
+    speed: 5
     setdefense: 0
     defense: 10
     maxhp: 10

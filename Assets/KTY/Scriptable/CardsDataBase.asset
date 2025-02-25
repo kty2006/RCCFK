@@ -12,928 +12,620 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d52dd14741f974788197019b911a76, type: 3}
   m_Name: CardsDataBase
   m_EditorClassIdentifier: 
-  MaxCost: 100
-  CurrentCost: 100
+  MaxCost: 200
+  CurrentCost: 190
   <CardData>k__BackingField:
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 5
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 3
+      RepNumber: 1
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 1
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
     <type>k__BackingField: 0
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
       RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
     <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
+    <type>k__BackingField: 4
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 7
+      RepNumber: 0
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
+    <type>k__BackingField: 5
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 3
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
     <cost>k__BackingField: 15
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
-    <type>k__BackingField: 3
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 4
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
     <type>k__BackingField: 7
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 0
-      AbilityStates: 5
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
   <AllCards>k__BackingField:
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 5
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 3
+      RepNumber: 1
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 1
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
     <type>k__BackingField: 0
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
       RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
     <type>k__BackingField: 3
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 15
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 4
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 3
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 10
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 2
+      type: 5
+      RepNumber: 10
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
     <type>k__BackingField: 3
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
+      type: 6
+      RepNumber: 5
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
     <type>k__BackingField: 4
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
+      type: 7
       RepNumber: 0
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
     <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
       RepNumber: 3
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 1
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
     <type>k__BackingField: 0
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
       RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
     <type>k__BackingField: 3
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 15
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
     <type>k__BackingField: 4
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
+      type: 7
       RepNumber: 0
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
     <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
       RepNumber: 3
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 1
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
     <type>k__BackingField: 0
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
       RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
   <CardDeck>k__BackingField:
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 5
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 3
+      RepNumber: 1
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
     <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 1
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
     <type>k__BackingField: 0
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
       type: 0
       RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 15
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
     <type>k__BackingField: 1
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 5
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
     <type>k__BackingField: 2
-    <cost>k__BackingField: 0
+    <cost>k__BackingField: 20
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
     <type>k__BackingField: 3
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 15
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 4
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 3
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 10
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 2
+      type: 5
+      RepNumber: 10
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  <remainingCards>k__BackingField:
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 3
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 10
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 2
-      AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
     <type>k__BackingField: 3
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
+      type: 6
+      RepNumber: 5
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
     <type>k__BackingField: 4
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
-      type: 0
+      type: 7
       RepNumber: 0
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
     <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
+    <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
       RepNumber: 3
       AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 10
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 2
-      AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
-    <type>k__BackingField: 3
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 4
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
     <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 3
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
     <cost>k__BackingField: 10
     <Ability>k__BackingField:
       type: 0
-      RepNumber: 2
+      RepNumber: 10
       AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: a2160983102e1844ebed93c4ca024a53, type: 3}
-    <type>k__BackingField: 3
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 4
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 5
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 6
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 1250d955b1c991c46a06b799e560a646, type: 3}
-    <type>k__BackingField: 7
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 5
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 3
-      AbilityStates: 5
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 10
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 2
-      AbilityStates: 10
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 491eab60661aaed43a0dd0a2d0b00b13, type: 3}
-    <type>k__BackingField: 0
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 1
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 15
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 15
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: c0388095181bee542a1e71f775b92c2b, type: 3}
-    <type>k__BackingField: 1
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
-  - <sprite>k__BackingField: {fileID: 21300000, guid: 6d02457638a9d8a468792f1997351739, type: 3}
-    <type>k__BackingField: 2
-    <cost>k__BackingField: 0
-    <Ability>k__BackingField:
-      type: 0
-      RepNumber: 0
-      AbilityStates: 0
+  <remainingCards>k__BackingField: []
   <AllCardCount>k__BackingField: 50
   <DeckCount>k__BackingField: 20

@@ -8,8 +8,8 @@ public static class Local
     public static TurnSystem TurnSystem = new();
     public static DataSave DataSave = new();
     public static Json Json = new();
-    private static int stage;
-    public static int Gold;
+    private static int stage = 0;
+    public static int Gold=10000;
     public static int Stage { get { return stage; } set { stage += value; DataSave.Stage = Stage; } }
 
     public static void StageReSet()

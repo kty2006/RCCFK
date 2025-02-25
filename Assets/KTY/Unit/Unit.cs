@@ -20,7 +20,7 @@ public class States //unit½ºÅÝ
     [SerializeField] private int cost;
     [SerializeField] private float exp;
 
-    public float Lv { get { return lv; } set { lv += value; MaxHp = 30 * value; SetDefense = 1 * value; Power = 1 * value; Speed = 1 * value; MaxExp += 1; } }
+    public float Lv { get { return lv; } set { lv += value; MaxHp = 30 * value; SetDefense = 1 * value; Power = 1 * value; Speed = 1 * value; MaxExp += 1; MaxCost = 1; Debug.Log("·¹º§¾÷"); } }
     public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; } }
     public float SetDefense { get { return setdefense; } set { setdefense = value; defense = SetDefense; } }
     public float SetPower { get { return setpower; } set { setpower += value; power = SetPower; } }
@@ -29,11 +29,11 @@ public class States //unit½ºÅÝ
 
 
     public float Power { get { return power; } set => power += value; }
-    public float Defense { get { return defense; } set { defense += value; Debug.Log(defense); } }
+    public float Defense { get { return defense; } set { defense += value; Debug.Log($"{defense} : {value}"); } }
     public float Hp { get { return hp; } set { hp = Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); } } }
     public float Speed { get { return speed; } set => speed += value; }
     public int Cost { get { return cost; } set { cost = value; } }
-    public float Exp { get { return exp; } set { exp += value; while (exp >= MaxExp) { exp -= MaxExp; Lv = 1; } } }
+    public float Exp { get { return exp; } set { exp += value; Debug.Log($"{exp} : {value}"); while (exp >= MaxExp) { exp -= MaxExp; Lv = 1; } } }
 }
 [Serializable]
 public abstract class Unit : MonoBehaviour
@@ -83,7 +83,7 @@ public abstract class Unit : MonoBehaviour
 
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
-        action = new Attack(this, unitBehaviour.RepNumber);
+        action = new Attack(this, unitBehaviour.RepNumber,unitBehaviour.AbilityStates);
         unitBehaviour.Abillity = action;
         unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
@@ -134,11 +134,13 @@ public class Attack : IAttack
 {
     private Unit Unit;
     private int repnumber;
-    public Attack(Unit unit, int repnumber)
+    private float States;
+    public Attack(Unit unit, int repnumber, float states)
     {
         Unit = unit;
         Debug.Log(Unit);
         this.repnumber = repnumber;
+        States = states;
     }
     public void Invoke()
     {
@@ -148,7 +150,8 @@ public class Attack : IAttack
             repnumber -= 1;
             if (Unit.TargetStates.UnitStates.Defense > 0)
             {
-                Unit.TargetStates.UnitStates.Defense = -Unit.UnitStates.Power;
+                Unit.TargetStates.UnitStates.Defense = -(Unit.UnitStates.Power+States);
+                Debug.Log(Unit.UnitStates.Power + States);
                 if (Unit.TargetStates.UnitStates.Defense < 0)
                 {
                     Unit.TargetStates.UnitStates.Hp = Unit.TargetStates.UnitStates.Defense;
@@ -157,7 +160,7 @@ public class Attack : IAttack
             }
             else
             {
-                Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Power;
+                Unit.TargetStates.UnitStates.Hp = -(Unit.UnitStates.Power + States);
             }
             Unit.TargetStates.animator.SetTrigger("Hit");
             Debug.Log($"°ø°Ý{Unit.name}");

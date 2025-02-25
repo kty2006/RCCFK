@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a95307cd8eda1c409c29d924eb34c64, type: 3}
   m_Name: Normal Item 2
   m_EditorClassIdentifier: 
-  equipmentID: 6
-  equipmentIcon: {fileID: 21300000, guid: 8f5f343890605c949ba932e2c9bf7e1b, type: 3}
-  equipmentName: 6
+  equipmentID: 2
+  equipmentIcon: {fileID: 21300000, guid: 3a33633e1ba06874694a36a52f144896, type: 3}
+  equipmentName: NormalHat
   equipmentGrade: 0
-  equipmentType: 0
+  equipmentType: 1
   equipmentStock: 0
   equipmentLevel: 0
   equipmentEffect: 0
@@ -25,12 +25,12 @@ MonoBehaviour:
     <SetExp>k__BackingField: 0
     lv: 0
     setpower: 0
-    power: 10
+    power: 0
     speed: 0
     setdefense: 0
     defense: 0
-    maxhp: 0
-    hp: 0
+    maxhp: 10
+    hp: 10
     maxcost: 0
     cost: 0
     exp: 0

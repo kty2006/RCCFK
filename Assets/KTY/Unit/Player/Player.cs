@@ -16,7 +16,7 @@ public class Player : Unit
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerRecovery, (unit) => { SetUnitRecovery(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerBuff, (unit) => { SetUnitBuff(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerSpecial, (unit) => { SetUnitSpecial(unit); });
-        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { UnitStates.Cost = UnitStates.MaxCost; UnitStates.Exp = enemyState.SetExp; StatesUiSet(); });
+        Local.EventHandler.Register<int>(EnumType.EnemyDie, (enemyState) => { UnitStates.Cost = UnitStates.MaxCost; UnitStates.Exp = enemyState; Debug.Log(enemyState); StatesUiSet(); });
         Local.EventHandler.Register<ResetCost>(EnumType.ResetCost, (reset) => { UnitStates.Cost = UnitStates.MaxCost; StatesUiSet(); });
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.States = UnitStates; });
         Local.EventHandler.Register<int>(EnumType.LoadData, (num) => { UnitStates = Local.DataSave.States; Local.Json.ReadJson(); });
@@ -49,6 +49,7 @@ public class Player : Unit
         PlayerStates.Defense += state.Defense;
         PlayerStates.MaxHp += state.Hp;
         PlayerStates.Speed += state.Speed;
+        StatesUiSet();
     }
 
     public override void AllStateMinus(States state)
@@ -58,6 +59,7 @@ public class Player : Unit
         PlayerStates.Defense -= state.Defense;
         PlayerStates.MaxHp -= state.Hp;
         PlayerStates.Speed -= state.Speed;
+        StatesUiSet();
     }
 
     public void ResetStates()

@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
                 EquipmentData.Equipments = Local.DataSave.Equipments;
                 EquipmentData.WearEquipments = Local.DataSave.SelectEquipments;
                 Local.EventHandler.Invoke<int>(EnumType.LoadData, 1);
+                Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1);
                 Local.Json.ReadJson();
             }
         }

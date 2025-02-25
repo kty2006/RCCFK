@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a95307cd8eda1c409c29d924eb34c64, type: 3}
   m_Name: Normal Item 1
   m_EditorClassIdentifier: 
-  equipmentID: 5
-  equipmentIcon: {fileID: 21300000, guid: a6bc173f6c2368f46b1e8c510ef6d502, type: 3}
-  equipmentName: 5
+  equipmentID: 1
+  equipmentIcon: {fileID: 21300000, guid: 4bb85e9d81dd972438a5d43bf3dd0a87, type: 3}
+  equipmentName: NormalWeapon
   equipmentGrade: 0
   equipmentType: 0
   equipmentStock: 0

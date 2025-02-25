@@ -17,7 +17,7 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
     public Unit costState;
 
     private Vector3[] CardsPos = new Vector3[20];
-    private int drowCount = 8;
+    private int drowCount = 5;
     private int drowIndex = 0;
     private GameObject clickedObject;
     private bool minCostCheck = false;
@@ -28,8 +28,8 @@ public class CardManager : MonoBehaviour, IPointerExitHandler, IPointerClickHand
         CardsPosSet();
         CreateCards(CardsData.CardDeck.Count);
         CardDrow(drowCount);
-        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { drowIndex = 0; InGameData.AllDeckReMove(); CardDrow(drowCount); });
-        Local.EventHandler.Register<EnemyTurnSelect>(EnumType.EnemyTurnSelect, (turnselect) => { InGameData.AllDeckReMove(); CardDrow(drowCount); drowCount = 8; });
+        Local.EventHandler.Register<int>(EnumType.EnemyDie, (enemyState) => { drowIndex = 0; InGameData.AllDeckReMove(); CardDrow(drowCount); });
+        Local.EventHandler.Register<EnemyTurnSelect>(EnumType.EnemyTurnSelect, (turnselect) => { InGameData.AllDeckReMove(); CardDrow(drowCount); drowCount = 5; });
         Local.EventHandler.Register<int>(EnumType.CardDrowUp, (count) => { drowCount += count; });
     }
 

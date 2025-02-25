@@ -92,10 +92,10 @@ MonoBehaviour:
     <SetExp>k__BackingField: 10
     lv: 0
     setpower: 0
-    power: 5
-    speed: 2
+    power: 10
+    speed: 5
     setdefense: 0
-    defense: 10
+    defense: 15
     maxhp: 10
     hp: 10
     maxcost: 0

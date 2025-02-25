@@ -11,7 +11,7 @@ public class BattleManager : MonoBehaviour
     public void Start()
     {
         StartBattle();
-        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { StartBattle(); });
+        Local.EventHandler.Register<int>(EnumType.EnemyDie, (enemyState) => { StartBattle(); });
         //Local.EventHandler.Register<TurnAdd>(EnumType.TurnAdd, (turnAdd) => { GetTurn(); });
     }
     public void StartBattle()

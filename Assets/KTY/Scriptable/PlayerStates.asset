@@ -18,5 +18,5 @@ MonoBehaviour:
   Defense: 10
   MaxHp: 20
   Hp: 20
-  Maxcost: 20
+  Maxcost: 10
   Cost: 10

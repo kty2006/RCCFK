@@ -11,7 +11,7 @@ public class EnemyFactory : MonoBehaviour
     public static Unit CurrentGameObject;
     public void Awake()
     {
-        Local.EventHandler.Register<States>(EnumType.EnemyDie, (enemyState) => { CreateEnum(); });
+        Local.EventHandler.Register<int>(EnumType.EnemyDie, (enemyState) => { CreateEnum(); });
         CreateEnum();
     }
     public void CreateEnum()
@@ -21,17 +21,20 @@ public class EnemyFactory : MonoBehaviour
         {
             Instantiate(BossModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
             CurrentGameObject = unit;
+            SetStates();
         }
         else if (IsInSecondSequence(Local.Stage))//보스
         {
             Instantiate(MiddleBossModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
             CurrentGameObject = unit;
+            SetStates();
         }
         else//일반 몬스터
         {
 
             Instantiate(NormalEnemyModel[Random.Range(0, NormalEnemyModel.Count)], CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
             CurrentGameObject = unit;
+            SetStates();
         }
     }
 
@@ -43,6 +46,16 @@ public class EnemyFactory : MonoBehaviour
     public bool IsInSecondSequence(int x)//10,20,30,40,50 이 수열인지 확인
     {
         return x % 10 == 0 && x / 10 >= 1;
+    }
+
+    public void SetStates()
+    {
+        CurrentGameObject.UnitStates.Power = CurrentGameObject.UnitStates.Power * Local.Stage;
+        CurrentGameObject.UnitStates.Defense = CurrentGameObject.UnitStates.Defense * Local.Stage;
+        CurrentGameObject.UnitStates.MaxHp = CurrentGameObject.UnitStates.MaxHp * Local.Stage;
+        CurrentGameObject.UnitStates.SetExp += CurrentGameObject.UnitStates.SetExp * Local.Stage;
+
+
     }
 }
 
