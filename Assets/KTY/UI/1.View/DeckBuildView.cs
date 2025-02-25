@@ -59,11 +59,12 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
         }
         else if (image1.sprite == null)
         {
-
+            Debug.Log("실행");
             MyDeckGrid.transform.GetChild(index).transform.GetChild(0).TryGetComponent(out Image myCard);
             Destroy(cardsObj[0]);
             myCard.sprite = saveCard;
         }
+        Debug.Log(image1.sprite);
         cards.Clear();
         cardsObj.Clear();
     }
@@ -102,7 +103,6 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
             if (myDecks[i] == card)
             {
                 cards.Add(i / 2);
-                Debug.Log($"{i}");
                 break;
             }
         }
@@ -126,7 +126,7 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
             if (cards.Count == 0 && clickedObject.transform.parent.name == RemainingCardGrid.name)
             {
                 parentObject = RemainingCardGrid;
-                CardSizeSet(clickedObject, Vector3.one * 1.3f);
+                CardSizeSet(clickedObject, Vector3.one * 1.1f);
             }
             else if (cards.Count == 0 && clickedObject.transform.parent.name == MyDeckGrid.name)
             {
@@ -139,7 +139,7 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
                     cards.Clear();
                     cardsObj.Clear();
                     parentObject = RemainingCardGrid;
-                    CardSizeSet(clickedObject, Vector3.one * 1.3f);
+                    CardSizeSet(clickedObject, Vector3.one);
                 }
                 else if (clickedObject.transform.parent.name == MyDeckGrid.name)
                 {
@@ -147,6 +147,7 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
                     CardSizeSet(clickedObject, Vector3.one);
                     changeFunc = null;
                     changeFunc = DeckBuildPresenter.ChangeCard;
+                    Debug.Log("실행");
                 }
             }
             else if (cards.Count == 1 && cardsObj[0].transform.parent.name == MyDeckGrid.name)
@@ -157,6 +158,11 @@ public class DeckBuildView : MonoBehaviour, IPointerClickHandler
                     changeFunc = null;
                     changeFunc = DeckBuildPresenter.CardRelease;
                     releaseFunc = DeckBuildPresenter.CardRelease;
+                }
+                else
+                {
+                    cards.Clear();
+                    cardsObj.Clear();
                 }
             }
             if (parentObject != null)

@@ -7,14 +7,7 @@ using UnityEngine;
 public class States //unit스텟 
 {
     public Action DeadFunc;
-    public float Lv { get { return lv; } set { lv += value; MaxHp = 30 * value; SetDefense = 1 * value; Power = 1 * value; Speed = 1 * value; MaxExp += 1; } }
-    public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; } }
-    public float SetDefense { get { return setdefense; } set { setdefense += value; defense = SetDefense; } }
-    public float SetPower { get { return setpower; } set { setpower += value; power = SetPower; } }
-    public int MaxCost { get { return maxcost; } set { maxcost += value; maxcost = cost; } }
-
-    [field: SerializeField] public float MaxExp { get; set; } = 10;
-
+    [field: SerializeField] public int SetExp { get; set; }
     [SerializeField] private float lv;
     [SerializeField] private float setpower;
     [SerializeField] private float power;
@@ -26,19 +19,23 @@ public class States //unit스텟
     [SerializeField] private int maxcost;
     [SerializeField] private int cost;
     [SerializeField] private float exp;
-    [field: SerializeField] public int SetExp { get; set; }
+
+    public float Lv { get { return lv; } set { lv += value; MaxHp = 30 * value; SetDefense = 1 * value; Power = 1 * value; Speed = 1 * value; MaxExp += 1; } }
+    public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; Debug.Log(hp); } }
+    public float SetDefense { get { return setdefense; } set { setdefense += value; defense = SetDefense; } }
+    public float SetPower { get { return setpower; } set { setpower += value; power = SetPower; } }
+    public int MaxCost { get { return maxcost; } set { maxcost += value; cost = maxcost; } }
+    public float MaxExp { get; set; } = 10;
+
 
     public float Power { get { return power; } set => power += value; }
     public float Defense { get { return defense; } set => defense += value; }
-    public float Hp { get { return hp; } set { hp = Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); } } }
+    public float Hp { get { return hp; } set { hp = Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); Debug.Log("데드"); } } }
     public float Speed { get { return speed; } set => speed += value; }
-    public int Cost { get { return cost; } set { cost = Mathf.Clamp(cost = value, 0, MaxCost); } }
-
+    public int Cost { get { return cost; } set { cost = value; } }
     public float Exp { get { return exp; } set { exp += value; while (exp >= MaxExp) { exp -= MaxExp; Lv = 1; } } }
-
-
 }
-
+[Serializable]
 public abstract class Unit : MonoBehaviour
 {
     [field: SerializeField] public States UnitStates { get; set; }
@@ -47,7 +44,7 @@ public abstract class Unit : MonoBehaviour
     public Action EndAniFunc { get; set; }
     protected Action<States> StatesSetFunc { get; set; }
 
-
+    private UnitBehaviour action;
     public virtual void Start()
     {
         StatesUiSet();
@@ -63,6 +60,22 @@ public abstract class Unit : MonoBehaviour
 
     public abstract void StatesUiSet();//스텟ui동기화
 
+    public virtual void AllStateSum(States state)
+    {
+        UnitStates.Power = state.Power;
+        UnitStates.Defense = state.Defense;
+        UnitStates.MaxHp = state.Hp;
+        UnitStates.Speed = state.Speed;
+    }
+
+    public virtual void AllStateMinus(States state)
+    {
+        UnitStates.Power = -state.Power;
+        UnitStates.Defense = -state.Defense;
+        UnitStates.MaxHp = -state.Hp;
+        UnitStates.Speed = -state.Speed;
+    }
+
     protected void StartAction()//애니메이션 끝났을때 실행할 함수
     {
         EndAniFunc?.Invoke();
@@ -70,7 +83,9 @@ public abstract class Unit : MonoBehaviour
 
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc += new Attack(this, unitBehaviour.RepNumber).Invoke;
+        action = new Attack(this, unitBehaviour.RepNumber);
+        unitBehaviour.AbillityFunc += action.Invoke;
+        Debug.Log(this);
     }
 
     protected void SetUnitDefense(AbillityWrapper unitBehaviour)
@@ -107,6 +122,7 @@ public abstract class Unit : MonoBehaviour
         }
     }
 }
+[Serializable]
 public class Attack : IAttack
 {
     private Unit Unit;
@@ -114,6 +130,7 @@ public class Attack : IAttack
     public Attack(Unit unit, int repnumber)
     {
         Unit = unit;
+        Debug.Log(Unit);
         this.repnumber = repnumber;
     }
     public void Invoke()
@@ -136,7 +153,7 @@ public class Attack : IAttack
         });
     }
 }
-
+[Serializable]
 public class Defense : IDefense
 {
     public Unit Unit;
@@ -158,7 +175,7 @@ public class Defense : IDefense
         });
     }
 }
-
+[Serializable]
 public class Recovery : IRecovery
 {
     public Unit Unit;
@@ -181,7 +198,7 @@ public class Recovery : IRecovery
         });
     }
 }
-
+[Serializable]
 public class PowerUp : IBuff
 {
     public Unit Unit;
@@ -204,8 +221,8 @@ public class PowerUp : IBuff
     }
 }
 
-//애니메이션 추가 아래로 다
-public class TargetTurnSkip : ISpecial 
+[Serializable]//애니메이션 추가 아래로 다
+public class TargetTurnSkip : ISpecial
 {
     private Unit unit;
 
@@ -226,7 +243,7 @@ public class TargetTurnSkip : ISpecial
         });
     }
 }
-
+[Serializable]
 public class CardDrowUp : ISpecial
 {
     private Unit unit;
@@ -243,7 +260,7 @@ public class CardDrowUp : ISpecial
         Debug.Log($"다음턴 카드 한장 추가{unit.name}");
     }
 }
-
+[Serializable]
 public class TargetPowerDown : ISpecial
 {
     private Unit unit;
@@ -261,7 +278,7 @@ public class TargetPowerDown : ISpecial
         Debug.Log($"적 공격력 다운{unit.name}");
     }
 }
-
+[Serializable]
 public class TargetDefenseDown : ISpecial
 {
     private Unit unit;

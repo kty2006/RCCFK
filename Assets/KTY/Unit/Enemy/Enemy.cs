@@ -19,11 +19,12 @@ public class Enemy : Unit
         Local.EventHandler.Invoke<States>(EnumType.EnemyStatesUi, UnitStates);
     }
 
-    protected override void Die()
+    protected override void Die()//수정 필요
     {
+        DieInside();
         animator.SetTrigger("Die");
         Local.Stage = 1;
-        
+
     }
 
     public void DieInside()
@@ -31,7 +32,7 @@ public class Enemy : Unit
         Local.EventHandler.Invoke<States>(EnumType.EnemyDie, UnitStates);
         Local.EventHandler.Invoke<States>(EnumType.DieUi, UnitStates);
         Local.EventHandler.Invoke<DataSave>(EnumType.SaveData, Local.DataSave);
-        Destroy(gameObject.transform.parent.gameObject);
+        Destroy(gameObject.transform.gameObject);
     }
 
     public void EnemyEnumSet()

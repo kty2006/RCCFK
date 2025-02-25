@@ -12,7 +12,7 @@ public class EnemyFactory : MonoBehaviour
     }
     public void CreateEnum()
     {
-        Instantiate(EnemyModel, CenterPos.position, CenterPos.rotation).gameObject.transform.GetChild(0).TryGetComponent(out Unit unit);
+        Instantiate(EnemyModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
         CurrentGameObject = unit;
         //if(IsInFirstSequence(Local.Stage))//중간보스
         //{

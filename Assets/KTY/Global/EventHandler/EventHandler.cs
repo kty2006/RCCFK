@@ -14,6 +14,8 @@ public enum EnumType
     PlayerSpecial,
     PlayerStatesUi,
     PlayerDie,
+    PlayerAllStateSum,
+    PlayerAllStateMinus,
     GetExp,
 
     EnemyTurnAdd,
@@ -37,14 +39,15 @@ public enum EnumType
     CardDrowUp,
     SaveData,
     LoadData,
+    ReStart
 
 }
 public enum Turn { TurnSystem }
 public enum TurnAdd { TurnSystem }
 public enum UnitDead { UnitDead }
 public enum EnemyTurnSelect { EnemyTurnSelect }
-
 public enum ResetCost { ResetCost }
+public enum ReStart { ReStart }
 
 public class EventHandler
 {

@@ -9,12 +9,15 @@ using UnityEngine.Networking;
 public class GameManager : MonoBehaviour
 {
     public CardsDataBase CardsDataBase;
+    public MyEquipmentData EquipmentData;
     public void Awake()
     {
         Application.targetFrameRate = 60;
 
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.MyDeck = CardsDataBase.CardDeck; Local.Json.ReadJson(); });
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.Stage = Local.Stage; Local.Json.ReadJson(); });
+        Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.Equipments = EquipmentData.Equipments; Local.Json.ReadJson(); });
+        Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.SelectEquipments = EquipmentData.WearEquipments; Local.Json.ReadJson(); });
 
         string filePath = Path.Combine(Application.persistentDataPath, "Data.json");
         string jsonContent;
@@ -35,6 +38,8 @@ public class GameManager : MonoBehaviour
                 Local.Json.LoadJson();
                 CardsDataBase.CardDeck = Local.DataSave.MyDeck;
                 Local.Stage = Local.DataSave.Stage;
+                EquipmentData.Equipments = Local.DataSave.Equipments;
+                EquipmentData.WearEquipments = Local.DataSave.SelectEquipments;
                 Local.EventHandler.Invoke<int>(EnumType.LoadData, 1);
                 Local.Json.ReadJson();
             }

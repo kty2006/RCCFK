@@ -7,6 +7,8 @@ TagManager:
   - Collide
   - Grid
   - Card
+  - Equipment
+  - WearEquipment
   layers:
   - Default
   - TransparentFX
