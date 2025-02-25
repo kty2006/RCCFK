@@ -10,7 +10,7 @@ public class Player : Unit
     public void Awake()
     {
         ResetStates();
-        StatesUiSet();
+        //StatesUiSet();
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerAttack, (unit) => { SetUnitAttack(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerDefense, (unit) => { SetUnitDefense(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerRecovery, (unit) => { SetUnitRecovery(unit); });

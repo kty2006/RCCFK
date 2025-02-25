@@ -5,8 +5,11 @@ using UnityEngine.UI;
 public class DieUiView : MonoBehaviour
 {
     public TextMeshProUGUI StageText;
-    public void StageSet(States states)
+
+    public TextMeshProUGUI GoldText;
+    public void StageSet(int num)
     {
         StageText.text = $"{Local.Stage}";
+        GoldText.text = $"{Local.Gold}";
     }
 }

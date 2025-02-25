@@ -34,7 +34,7 @@ public enum EnumType
     TurnAdd,
     TurnRmove,
     ContentsMove,
-    DieUi,
+    InformationUi,
     ResetCost,
     CardDrowUp,
     SaveData,
@@ -127,9 +127,16 @@ public class EventWrapper<TEvent> : EventWrapper//  원하는 매개변수로 받을수 있�
         throw new NotImplementedException();
     }
 
-    public override void Invoke(object ev) //object타입으로 받는거 해결 언박싱 문제
+    public override void Invoke(object ev)
     {
-        GameEvent?.Invoke((TEvent)ev);
+        if (ev is TEvent eventData)
+        {
+            GameEvent?.Invoke(eventData);
+        }
+        else
+        {
+            Debug.LogError($"InvalidCastException: Expected {typeof(TEvent)}, but received {ev.GetType()}");
+        }
     }
 
     public EventWrapper(Action<TEvent> ev)

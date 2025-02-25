@@ -45,7 +45,7 @@ public class BattleManager : MonoBehaviour
         {
             Local.EventHandler.Invoke<Turn>(EnumType.EnemyTurnSystem, Turn.TurnSystem);
             Local.EventHandler.Invoke<Turn>(EnumType.PlayerTurnSystem, Turn.TurnSystem);
-            //Local.EventHandler.Invoke<EnemyTurnSelect>(EnumType.EnemyTurnSelect, EnemyTurnSelect.EnemyTurnSelect);
+            Local.EventHandler.Invoke<EnemyTurnSelect>(EnumType.EnemyTurnSelect, EnemyTurnSelect.EnemyTurnSelect);
             NextUnit = Player;
         }
     }

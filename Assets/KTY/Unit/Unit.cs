@@ -84,23 +84,26 @@ public abstract class Unit : MonoBehaviour
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
         action = new Attack(this, unitBehaviour.RepNumber);
-        unitBehaviour.AbillityFunc += action.Invoke;
-        Debug.Log(this);
+        unitBehaviour.Abillity = action;
+        unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
 
     protected void SetUnitDefense(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new Defense(this, unitBehaviour.AbilityStates).Invoke;
+        unitBehaviour.Abillity = new Defense(this, unitBehaviour.AbilityStates);
+        unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
 
     protected void SetUnitRecovery(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new Recovery(this, unitBehaviour.AbilityStates).Invoke;
+        unitBehaviour.Abillity = new Recovery(this, unitBehaviour.AbilityStates);
+        unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
 
     protected void SetUnitBuff(AbillityWrapper unitBehaviour)
     {
-        unitBehaviour.AbillityFunc = new PowerUp(this, unitBehaviour.AbilityStates).Invoke;
+        unitBehaviour.Abillity = new PowerUp(this, unitBehaviour.AbilityStates);
+        unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
 
     protected void SetUnitSpecial(AbillityWrapper unitBehaviour)
@@ -108,16 +111,20 @@ public abstract class Unit : MonoBehaviour
         switch (unitBehaviour.type)
         {
             case CardType.TargetTurnReove:
-                unitBehaviour.AbillityFunc = new TargetTurnSkip(this).Invoke;
+                unitBehaviour.Abillity = new TargetTurnSkip(this);
+                unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
                 break;
             case CardType.CardDrowUp:
-                unitBehaviour.AbillityFunc = new CardDrowUp(this).Invoke;
+                unitBehaviour.Abillity = new CardDrowUp(this);
+                unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
                 break;
             case CardType.TargetPowerDown:
-                unitBehaviour.AbillityFunc = new TargetPowerDown(this, unitBehaviour.AbilityStates).Invoke;
+                unitBehaviour.Abillity = new TargetPowerDown(this, unitBehaviour.AbilityStates);
+                unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
                 break;
-            case CardType.TargetDefenseDown:
-                unitBehaviour.AbillityFunc = new TargetDefenseDown(this, unitBehaviour.AbilityStates).Invoke;
+            case CardType:
+                unitBehaviour.Abillity = new TargetDefenseDown(this, unitBehaviour.AbilityStates);
+                unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
                 break;
         }
     }
@@ -139,7 +146,19 @@ public class Attack : IAttack
         Unit.EndAniFunc = (() =>
         {
             repnumber -= 1;
-            Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Power;
+            if (Unit.TargetStates.UnitStates.Defense > 0)
+            {
+                Unit.TargetStates.UnitStates.Defense = -Unit.UnitStates.Power;
+                if (Unit.TargetStates.UnitStates.Defense < 0)
+                {
+                    Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Defense;
+                    Unit.TargetStates.UnitStates.SetDefense = 0;
+                }
+            }
+            else
+            {
+                Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Power;
+            }
             Unit.TargetStates.animator.SetTrigger("Hit");
             Debug.Log($"АјАн{Unit.name}");
             Unit.TargetStates.StatesUiSet();

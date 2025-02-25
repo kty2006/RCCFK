@@ -9,6 +9,7 @@ public static class Local
     public static DataSave DataSave = new();
     public static Json Json = new();
     private static int stage;
+    public static int Gold;
     public static int Stage { get { return stage; } set { stage += value; DataSave.Stage = Stage; } }
 
     public static void StageReSet()

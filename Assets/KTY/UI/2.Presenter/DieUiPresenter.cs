@@ -4,7 +4,7 @@ using UnityEngine;
 public class DieUiPresenter : MonoBehaviour
 {
     public DieUiView DieUiView;
-    public Action<States> StageFunc;
+    public Action<int> StageFunc;
 
     public void Awake()
     {
@@ -14,7 +14,7 @@ public class DieUiPresenter : MonoBehaviour
     public void Subscribe()
     {
         StageFunc = DieUiView.StageSet;
-        Local.EventHandler.Register<States>(EnumType.DieUi, StageFunc);
-        Local.EventHandler.Register<States>(EnumType.PlayerStatesUi, StageFunc);
+        Local.EventHandler.Register<int>(EnumType.InformationUi, StageFunc);
+        Local.EventHandler.Register<int>(EnumType.PlayerStatesUi, StageFunc);
     }
 }

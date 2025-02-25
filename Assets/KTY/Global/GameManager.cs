@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
 
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.MyDeck = CardsDataBase.CardDeck; Local.Json.ReadJson(); });
-        Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.Stage = Local.Stage; Local.Json.ReadJson(); });
+        Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.Stage = Local.Stage; datasave.Gold = Local.Gold; Local.Json.ReadJson(); });
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.Equipments = EquipmentData.Equipments; Local.Json.ReadJson(); });
         Local.EventHandler.Register<DataSave>(EnumType.SaveData, (datasave) => { datasave.SelectEquipments = EquipmentData.WearEquipments; Local.Json.ReadJson(); });
 
@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
                 Local.Json.LoadJson();
                 CardsDataBase.CardDeck = Local.DataSave.MyDeck;
                 Local.Stage = Local.DataSave.Stage;
+                Local.Gold = Local.DataSave.Gold;
                 EquipmentData.Equipments = Local.DataSave.Equipments;
                 EquipmentData.WearEquipments = Local.DataSave.SelectEquipments;
                 Local.EventHandler.Invoke<int>(EnumType.LoadData, 1);

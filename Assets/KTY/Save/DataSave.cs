@@ -17,4 +17,6 @@ public class DataSave
     public States States;
 
     public int Stage;
+
+    public int Gold;
 }

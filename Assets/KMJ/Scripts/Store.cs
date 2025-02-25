@@ -35,9 +35,9 @@ public class Store : MonoBehaviour
         {
             PickType pickType = (PickType)i;
 
-            singleDrawButtons[i].onClick.AddListener(() => StoreEquipmentPickUp(pickType, 1));
-            tenDrawButtons[i].onClick.AddListener(() => StoreEquipmentPickUp(pickType, 10));
-
+            singleDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > 100) { StoreEquipmentPickUp(pickType, 1); Local.Gold -= 100; } });
+            tenDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > 1000) { StoreEquipmentPickUp(pickType, 10); Local.Gold -= 1000; } });
+            Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1);
             //singleDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 1));
             //tenDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 10));
         }
