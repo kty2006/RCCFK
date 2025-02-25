@@ -23,7 +23,7 @@ public class UnitStatesUiView : MonoBehaviour
         PlayerHpbar.value = states.Hp / states.MaxHp;
         PlayerHp.text = $"{states.Hp}/{states.MaxHp}";
         PlayerDefensebar.value = states.Defense / states.SetDefense;
-        PlayerDefense.text = $"{states.Defense} / {states.SetDefense}";
+        PlayerDefense.text = $"{states.Defense}";
     }
 
     public void EnemyUiSet(States states)
@@ -31,7 +31,7 @@ public class UnitStatesUiView : MonoBehaviour
         EnemyHpbar.value = states.Hp / states.MaxHp;
         EnemyHp.text = $"{states.Hp}/{states.MaxHp}";
         EnemyDefensebar.value = states.Defense / states.SetDefense;
-        EnemyDefense.text = $"{states.Defense} / {states.SetDefense}";
+        EnemyDefense.text = $"{states.Defense}";
     }
 
     public void CostSet(States states)

@@ -1,8 +1,12 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyFactory : MonoBehaviour
 {
-    public GameObject EnemyModel;
+    public List<GameObject> NormalEnemyModel;
+    public GameObject MiddleBossModel;
+    public GameObject BossModel;
     public Transform CenterPos;
     public static Unit CurrentGameObject;
     public void Awake()
@@ -12,19 +16,23 @@ public class EnemyFactory : MonoBehaviour
     }
     public void CreateEnum()
     {
-        Instantiate(EnemyModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
-        CurrentGameObject = unit;
-        //if(IsInFirstSequence(Local.Stage))//중간보스
-        //{
-        //}
-        //else if (IsInSecondSequence(Local.Stage))//보스
-        //{
 
-        //}
-        //else//일반 몬스터
-        //{
+        if (IsInFirstSequence(Local.Stage))//중간보스
+        {
+            Instantiate(BossModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
+            CurrentGameObject = unit;
+        }
+        else if (IsInSecondSequence(Local.Stage))//보스
+        {
+            Instantiate(MiddleBossModel, CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
+            CurrentGameObject = unit;
+        }
+        else//일반 몬스터
+        {
 
-        //}
+            Instantiate(NormalEnemyModel[Random.Range(0, NormalEnemyModel.Count)], CenterPos.position, CenterPos.rotation).gameObject.transform.TryGetComponent(out Unit unit);
+            CurrentGameObject = unit;
+        }
     }
 
     public bool IsInFirstSequence(int x)//5,15,25,35,45 이 수열인지 획인

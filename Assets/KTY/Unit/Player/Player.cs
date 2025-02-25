@@ -69,7 +69,6 @@ public class Player : Unit
         UnitStates.Hp = PlayerStates.Hp;
         UnitStates.Speed = PlayerStates.Speed;
         UnitStates.MaxCost += PlayerStates.Maxcost;
-        Debug.Log($"{UnitStates.MaxCost}:{PlayerStates.Maxcost}");
         UnitStates.Cost = PlayerStates.Maxcost;
     }
 }

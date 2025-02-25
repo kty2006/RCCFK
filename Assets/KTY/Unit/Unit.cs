@@ -21,16 +21,16 @@ public class States //unit스텟
     [SerializeField] private float exp;
 
     public float Lv { get { return lv; } set { lv += value; MaxHp = 30 * value; SetDefense = 1 * value; Power = 1 * value; Speed = 1 * value; MaxExp += 1; } }
-    public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; Debug.Log(hp); } }
-    public float SetDefense { get { return setdefense; } set { setdefense += value; defense = SetDefense; } }
+    public float MaxHp { get { return maxhp; } set { maxhp += value; hp = MaxHp; } }
+    public float SetDefense { get { return setdefense; } set { setdefense = value; defense = SetDefense; } }
     public float SetPower { get { return setpower; } set { setpower += value; power = SetPower; } }
     public int MaxCost { get { return maxcost; } set { maxcost += value; cost = maxcost; } }
     public float MaxExp { get; set; } = 10;
 
 
     public float Power { get { return power; } set => power += value; }
-    public float Defense { get { return defense; } set => defense += value; }
-    public float Hp { get { return hp; } set { hp = Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); Debug.Log("데드"); } } }
+    public float Defense { get { return defense; } set { defense += value; Debug.Log(defense); } }
+    public float Hp { get { return hp; } set { hp = Mathf.Clamp(hp += value, 0, MaxHp); if (hp <= 0) { DeadFunc?.Invoke(); } } }
     public float Speed { get { return speed; } set => speed += value; }
     public int Cost { get { return cost; } set { cost = value; } }
     public float Exp { get { return exp; } set { exp += value; while (exp >= MaxExp) { exp -= MaxExp; Lv = 1; } } }
@@ -151,7 +151,7 @@ public class Attack : IAttack
                 Unit.TargetStates.UnitStates.Defense = -Unit.UnitStates.Power;
                 if (Unit.TargetStates.UnitStates.Defense < 0)
                 {
-                    Unit.TargetStates.UnitStates.Hp = -Unit.UnitStates.Defense;
+                    Unit.TargetStates.UnitStates.Hp = Unit.TargetStates.UnitStates.Defense;
                     Unit.TargetStates.UnitStates.SetDefense = 0;
                 }
             }
@@ -161,6 +161,7 @@ public class Attack : IAttack
             }
             Unit.TargetStates.animator.SetTrigger("Hit");
             Debug.Log($"공격{Unit.name}");
+
             Unit.TargetStates.StatesUiSet();
             if (repnumber > 0 && Unit.TargetStates.UnitStates.Hp > 0)
             {

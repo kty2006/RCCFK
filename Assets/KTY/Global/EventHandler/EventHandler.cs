@@ -129,15 +129,16 @@ public class EventWrapper<TEvent> : EventWrapper//  원하는 매개변수로 받을수 있�
 
     public override void Invoke(object ev)
     {
-        if (ev is TEvent eventData)
+        if (ev is TEvent eventValue)
         {
-            GameEvent?.Invoke(eventData);
+            GameEvent?.Invoke(eventValue);
         }
         else
         {
-            Debug.LogError($"InvalidCastException: Expected {typeof(TEvent)}, but received {ev.GetType()}");
+            Debug.LogError($"Invalid event type: {ev.GetType().Name} is not {typeof(TEvent).Name}");
         }
     }
+
 
     public EventWrapper(Action<TEvent> ev)
     {

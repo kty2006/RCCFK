@@ -18,7 +18,6 @@ public class BattleManager : MonoBehaviour
     {
         Local.TurnSystem.Reset();
         Enemy = EnemyFactory.CurrentGameObject;
-        Debug.Log(Player.UnitStates.Speed);
         if (Player.UnitStates.Speed > Enemy.UnitStates.Speed)
         {
             NextUnit = Player;
