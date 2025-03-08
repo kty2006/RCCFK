@@ -10,6 +10,7 @@ public class Player : Unit
     public void Awake()
     {
         ResetStates();
+        StatesUiSet();
         //StatesUiSet();
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerAttack, (unit) => { SetUnitAttack(unit); });
         Local.EventHandler.Register<AbillityWrapper>(EnumType.PlayerDefense, (unit) => { SetUnitDefense(unit); });
@@ -31,14 +32,10 @@ public class Player : Unit
 
     protected override void Die()
     {
-        //적 재생성
-        //카드새로뽑고
-        //Local.EventHandler.Invoke<int>(EnumType.ReStart, 1);
         TargetStates.UnitStates.Hp = -TargetStates.UnitStates.MaxHp;
         ResetStates();
         Local.StageReSet();
         StatesUiSet();
-        UnitStates.DeadFunc = Die;
         Local.EventHandler.Invoke<DataSave>(EnumType.SaveData, Local.DataSave);
     }
 

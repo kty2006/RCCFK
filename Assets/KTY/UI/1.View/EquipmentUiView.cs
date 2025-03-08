@@ -70,6 +70,8 @@ public class EquipmentUiView : MonoBehaviour, IPointerClickHandler
                         currentEquipment = equipment;
                         InformationUI.EquipmentName.text = wearEquipments[j].EquipmentName;
                         InformationUI.EquipmentRank.text = wearEquipments[j].EquipmentGrade.ToString();
+                        InformationUI.Icon.sprite = wearEquipments[j].EquipmentIcon;
+                        InformationUI.EquipmentExplain.text = $"Power: {wearEquipments[j].states.Power}\n Hp: {wearEquipments[j].states.Hp}\n Speed: {wearEquipments[j].states.Speed}";
                         break;
                     }
                 }
@@ -82,6 +84,8 @@ public class EquipmentUiView : MonoBehaviour, IPointerClickHandler
             currentEquipment = equipment;
             InformationUI.EquipmentName.text = equipment.EquipmentName;
             InformationUI.EquipmentRank.text = equipment.EquipmentGrade.ToString();
+            InformationUI.Icon.sprite = equipment.EquipmentIcon;
+            InformationUI.EquipmentExplain.text = $"Power: {equipment.states.Power}\n Hp: {equipment.states.Hp}\n Speed: {equipment.states.Speed}\n Defense: {equipment.states.Defense}";
             InformationUI.States = equipment.states;
         }
     }

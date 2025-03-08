@@ -23,16 +23,15 @@ public class Enemy : Unit
     {
         DieInside();
         animator.SetTrigger("Die");
-        Local.Stage += 1;
+        Local.Stage = 1;
         Local.Gold += 100;
-
+        Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1);
     }
 
     public void DieInside()
     {
-        Debug.Log(UnitStates.SetExp);
         Local.EventHandler.Invoke<int>(EnumType.EnemyDie, UnitStates.SetExp);
-        Local.EventHandler.Invoke<int>(EnumType.InformationUi,1);
+        Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1);
         Local.EventHandler.Invoke<DataSave>(EnumType.SaveData, Local.DataSave);
         Destroy(gameObject.transform.gameObject);
     }

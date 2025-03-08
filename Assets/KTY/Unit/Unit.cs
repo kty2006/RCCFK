@@ -83,7 +83,7 @@ public abstract class Unit : MonoBehaviour
 
     protected void SetUnitAttack(AbillityWrapper unitBehaviour)
     {
-        action = new Attack(this, unitBehaviour.RepNumber,unitBehaviour.AbilityStates);
+        action = new Attack(this, unitBehaviour.RepNumber, unitBehaviour.AbilityStates);
         unitBehaviour.Abillity = action;
         unitBehaviour.AbillityFunc = unitBehaviour.Abillity.Invoke;
     }
@@ -145,13 +145,14 @@ public class Attack : IAttack
     public void Invoke()
     {
         Unit.animator.SetTrigger("Attack");
+        int repsavenum = repnumber;
+        repsavenum -= 1;
         Unit.EndAniFunc = (() =>
         {
-            repnumber -= 1;
+
             if (Unit.TargetStates.UnitStates.Defense > 0)
             {
-                Unit.TargetStates.UnitStates.Defense = -(Unit.UnitStates.Power+States);
-                Debug.Log(Unit.UnitStates.Power + States);
+                Unit.TargetStates.UnitStates.Defense = -(Unit.UnitStates.Power + States);
                 if (Unit.TargetStates.UnitStates.Defense < 0)
                 {
                     Unit.TargetStates.UnitStates.Hp = Unit.TargetStates.UnitStates.Defense;
@@ -162,17 +163,17 @@ public class Attack : IAttack
             {
                 Unit.TargetStates.UnitStates.Hp = -(Unit.UnitStates.Power + States);
             }
+
             Unit.TargetStates.animator.SetTrigger("Hit");
-            Debug.Log($"АјАн{Unit.name}");
 
             Unit.TargetStates.StatesUiSet();
-            if (repnumber > 0 && Unit.TargetStates.UnitStates.Hp > 0)
+            if (repsavenum > 0)
             {
                 Unit.animator.SetTrigger("Attack");
-                repnumber -= 1;
+                repsavenum -= 1;
             }
-            else
-                Unit.StatesUiSet();
+            Unit.StatesUiSet();
+
         });
     }
 }

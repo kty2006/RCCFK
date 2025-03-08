@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PlayerStates
   m_EditorClassIdentifier: 
   Lv: 0
-  Power: 10
-  Speed: 10
-  Defense: 10
-  MaxHp: 20
+  Power: 50
+  Speed: 20
+  Defense: 50
+  MaxHp: 60
   Hp: 20
-  Maxcost: 10
+  Maxcost: 30
   Cost: 10

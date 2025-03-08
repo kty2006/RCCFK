@@ -9,6 +9,7 @@ public class ImformationUI : MonoBehaviour, IPointerClickHandler
 {
     public Button mountingBtn;
     public Button clearBtn;
+    public Image Icon;
     public Text EquipmentName;
     public Text EquipmentRank;
     public Text EquipmentExplain;

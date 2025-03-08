@@ -9,6 +9,7 @@ public class DieUiPresenter : MonoBehaviour
     public void Awake()
     {
         Subscribe();
+        StageFunc?.Invoke(1);
     }
 
     public void Subscribe()

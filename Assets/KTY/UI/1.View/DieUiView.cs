@@ -11,5 +11,6 @@ public class DieUiView : MonoBehaviour
     {
         StageText.text = $"{Local.Stage}";
         GoldText.text = $"{Local.Gold}";
+        Debug.Log(Local.Stage);
     }
 }

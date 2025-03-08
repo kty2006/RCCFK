@@ -41,8 +41,12 @@ public class TurnSystem
                 {
                     currObj = turns[i];
                     currObj.Invoke();
-                    Turnskip = false;
                 }
+                else
+                {
+                    TurnStart(true);
+                }
+                Turnskip = false;
             }
             Local.EventHandler.Invoke<ResetCost>(EnumType.ResetCost, ResetCost.ResetCost);
             //turns.Clear();
