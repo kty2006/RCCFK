@@ -49,8 +49,6 @@ public class TurnSystem
                 Turnskip = false;
             }
             Local.EventHandler.Invoke<ResetCost>(EnumType.ResetCost, ResetCost.ResetCost);
-            //turns.Clear();
-            //TurnStart(false);
         }
     }
 

@@ -51,18 +51,18 @@ public enum ReStart { ReStart }
 
 public class EventHandler
 {
-    private Dictionary<Enum, EventContainer> EventDic = new Dictionary<Enum, EventContainer>();
+    private Dictionary<Enum, EventContainer> EventDic = new Dictionary<Enum, EventContainer>();//이벤트를 저장할 딕셔너리
 
-    public void Register<TEvent>(Enum enumType, Action<TEvent> action)
+    public void Register<TEvent>(Enum enumType, Action<TEvent> action)//이벤트 저장
     {
-        if (!EventDic.ContainsKey(enumType))
+        if (!EventDic.ContainsKey(enumType))//enum확인
         {
-            EventDic.Add(enumType, new EventContainer());
+            EventDic.Add(enumType, new EventContainer());//딕셔너리 추가
         }
         EventDic[enumType].Register<TEvent>(new EventWrapper<TEvent>(action));
     }
 
-    public void UnRegister(Enum enumType)
+    public void UnRegister(Enum enumType)//딕셔너리 제거
     {
         if (EventDic.ContainsKey(enumType))
         {
@@ -70,7 +70,7 @@ public class EventHandler
         }
     }
 
-    public void Invoke<TEvent>(Enum enumType, TEvent ev)
+    public void Invoke<TEvent>(Enum enumType, TEvent ev)//이벤트 실행
     {
         if (!EventDic.ContainsKey(enumType))
         {
@@ -94,7 +94,7 @@ public class EventContainer
     {
         foreach (var ev in EventWrapperSet)
         {
-            if (ev.EqualEvent(ev))
+            if (ev.EqualEvent(registerEventr))
             {
                 EventWrapperSet.Remove(ev);
                 return;
@@ -121,10 +121,18 @@ public class EventWrapper<TEvent> : EventWrapper//  원하는 매개변수로 받을수 있�
 {
 
     public Action<TEvent> GameEvent;
+    public EventWrapper(Action<TEvent> ev)
+    {
+        GameEvent = ev;
+    }
 
     public override bool EqualEvent(object ev)
     {
-        throw new NotImplementedException();
+        if (this == ev)
+        {
+            return true;
+        }
+        return false;
     }
 
     public override void Invoke(object ev)
@@ -138,11 +146,4 @@ public class EventWrapper<TEvent> : EventWrapper//  원하는 매개변수로 받을수 있�
             Debug.LogError($"Invalid event type: {ev.GetType().Name} is not {typeof(TEvent).Name}");
         }
     }
-
-
-    public EventWrapper(Action<TEvent> ev)
-    {
-        GameEvent = ev;
-    }
-
 }
