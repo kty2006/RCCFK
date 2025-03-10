@@ -20,24 +20,26 @@ public class Store : MonoBehaviour
     [SerializeField] private Button[] singleDrawButtons;
     [SerializeField] private Button[] tenDrawButtons;
 
+    [Header("UiPresenter")]
+    [SerializeField] private EquipmentUiPresenter equipmentUiPresenter;
     void Start()
     {
         BindButtons();
     }
-    
+
     private void BindButtons()
     {
-        int half = singleDrawButtons.Length / 2;
-        
-        for (int i = 0; i < half; i++)
+
+        for (int i = 0; i < singleDrawButtons.Length; i++)
         {
             PickType pickType = (PickType)i;
-            
-            singleDrawButtons[i].onClick.AddListener(() => StoreEquipmentPickUp(pickType, 1));
-            tenDrawButtons[i].onClick.AddListener(() => StoreEquipmentPickUp(pickType, 10));
-            
-            singleDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 1));
-            tenDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 10));
+            int onDrow = 100 * (i + 1);
+            int tenDrow = 1000 * (i + 1);
+            singleDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > onDrow) { StoreEquipmentPickUp(pickType, 1); Local.Gold -= onDrow; Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1); } });
+            tenDrawButtons[i].onClick.AddListener(() => { if (Local.Gold > tenDrow) { StoreEquipmentPickUp(pickType, 10); Local.Gold -= tenDrow; Local.EventHandler.Invoke<int>(EnumType.InformationUi, 1); } });
+
+            //singleDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 1));
+            //tenDrawButtons[i + half].onClick.AddListener(() => StoreCardPickUp(pickType, 10));
         }
     }
 
@@ -76,9 +78,11 @@ public class Store : MonoBehaviour
 
         int randomIndex = UnityEngine.Random.Range(0, itemList.Count);
         Equipment selectedEquipment = itemList[randomIndex];
+        equipmentUiPresenter.AddEquipment(selectedEquipment);
+        Local.EventHandler.Invoke<DataSave>(EnumType.SaveData, Local.DataSave);
         Debug.Log($"[Equipment PickUp] Type: {pickType}, Item: {selectedEquipment}");
     }
-    
+
     #endregion EquipmentPickUp
 
     #region CardPickUp
@@ -114,7 +118,7 @@ public class Store : MonoBehaviour
         Equipment selectedCard = itemList[randomIndex];
         Debug.Log($"[Card PickUp] Type: {pickType}, Item: {selectedCard}");
     }
-    
+
     #endregion CardPickUp
 
     #region Common PickUp Logic
@@ -123,14 +127,14 @@ public class Store : MonoBehaviour
     {
         int typeIndex = (int)currentType;
         PickType upgradedType = currentType;
-        
+
         if (typeIndex < probabilities.Length && UnityEngine.Random.Range(0f, 1f) <= probabilities[typeIndex])
         {
             upgradedType = (PickType)(typeIndex + 1);
         }
         pickUpMethod(upgradedType);
     }
-    
+
     #endregion Common PickUp Logic
 }
 

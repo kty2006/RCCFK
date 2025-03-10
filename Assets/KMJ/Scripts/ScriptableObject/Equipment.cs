@@ -92,4 +92,6 @@ public class Equipment : ScriptableObject
         private set { equipmentSkill = value; }
     }
     [SerializeField] private int equipmentSkill;
+
+    [field: SerializeField] public States states { get; set; }
 }

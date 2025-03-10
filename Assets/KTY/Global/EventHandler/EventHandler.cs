@@ -14,6 +14,9 @@ public enum EnumType
     PlayerSpecial,
     PlayerStatesUi,
     PlayerDie,
+    PlayerAllStateSum,
+    PlayerAllStateMinus,
+    GetExp,
 
     EnemyTurnAdd,
     EnemyTurnRemove,
@@ -31,11 +34,20 @@ public enum EnumType
     TurnAdd,
     TurnRmove,
     ContentsMove,
+    InformationUi,
+    ResetCost,
+    CardDrowUp,
+    SaveData,
+    LoadData,
+    ReStart
+
 }
 public enum Turn { TurnSystem }
 public enum TurnAdd { TurnSystem }
 public enum UnitDead { UnitDead }
 public enum EnemyTurnSelect { EnemyTurnSelect }
+public enum ResetCost { ResetCost }
+public enum ReStart { ReStart }
 
 public class EventHandler
 {
@@ -115,10 +127,18 @@ public class EventWrapper<TEvent> : EventWrapper//  원하는 매개변수로 받을수 있�
         throw new NotImplementedException();
     }
 
-    public override void Invoke(object ev) //object타입으로 받는거 해결 언박싱 문제
+    public override void Invoke(object ev)
     {
-        GameEvent?.Invoke((TEvent)ev);
+        if (ev is TEvent eventValue)
+        {
+            GameEvent?.Invoke(eventValue);
+        }
+        else
+        {
+            Debug.LogError($"Invalid event type: {ev.GetType().Name} is not {typeof(TEvent).Name}");
+        }
     }
+
 
     public EventWrapper(Action<TEvent> ev)
     {

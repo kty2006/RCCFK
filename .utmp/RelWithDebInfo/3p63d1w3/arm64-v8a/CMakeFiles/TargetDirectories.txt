@@ -1,0 +1,8 @@
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/bc609/Documents/fork/RCCFK/.utmp/RelWithDebInfo/3p63d1w3/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

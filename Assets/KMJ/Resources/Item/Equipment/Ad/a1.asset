@@ -21,3 +21,16 @@ MonoBehaviour:
   equipmentLevel: 0
   equipmentEffect: 0
   equipmentSkill: 0
+  <states>k__BackingField:
+    <SetExp>k__BackingField: 0
+    lv: 0
+    setpower: 0
+    power: 10
+    speed: 0
+    setdefense: 0
+    defense: 0
+    maxhp: 0
+    hp: 0
+    maxcost: 0
+    cost: 0
+    exp: 0

@@ -12,1629 +12,620 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d52dd14741f974788197019b911a76, type: 3}
   m_Name: CardsDataBase
   m_EditorClassIdentifier: 
-  <PlayingCards>k__BackingField:
-  - {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -509673430, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -91850972, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1561996384, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1127322650, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1387553949, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -729176152, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1926663640, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 917744093, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -27152532, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1260847340, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -560710711, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -676497084, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1946870467, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1270312304, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -865313968, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 254470818, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1364074267, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 725129967, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  - {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-  <CardsImageName>k__BackingField: Playing Cards
+  MaxCost: 200
+  CurrentCost: 190
+  <CardData>k__BackingField:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
+    <type>k__BackingField: 4
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 7
+      RepNumber: 0
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
+    <type>k__BackingField: 5
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 3
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
   <AllCards>k__BackingField:
-  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -509673430, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -91850972, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1561996384, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1127322650, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1387553949, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -729176152, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1926663640, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 917744093, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -27152532, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1260847340, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -560710711, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -676497084, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 13
-  - sprite: {fileID: 1946870467, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 14
-  - sprite: {fileID: 1270312304, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 15
-  - sprite: {fileID: -865313968, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 16
-  - sprite: {fileID: 254470818, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 17
-  - sprite: {fileID: 1364074267, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 18
-  - sprite: {fileID: 725129967, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 19
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
       AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
       AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
+    <type>k__BackingField: 4
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 7
+      RepNumber: 0
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
+    <type>k__BackingField: 5
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 3
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 3
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 4
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
+    <type>k__BackingField: 4
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 7
+      RepNumber: 0
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
+    <type>k__BackingField: 5
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 3
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: d1b1f0872303f2442960c0f39e7f14d5, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 612dc4c0f7a51824e9babf372574c8e0, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 40
+      AbilityStates: 40
+  - <sprite>k__BackingField: {fileID: 21300000, guid: e7fc8bc85cee31e4095806ab5c26c14a, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ce2dddec04416d48ad352b2b2776076, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 49391765b212b0446b5a5fa2aee14638, type: 3}
+    <type>k__BackingField: 6
+    <cost>k__BackingField: 30
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 30
+      AbilityStates: 30
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
+      AbilityStates: 20
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
+      AbilityStates: 40
   <CardDeck>k__BackingField:
-  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -509673430, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -91850972, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1561996384, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1127322650, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1387553949, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -729176152, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1926663640, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 917744093, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -27152532, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1260847340, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -560710711, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -676497084, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 13
-  - sprite: {fileID: 1946870467, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 14
-  - sprite: {fileID: 1270312304, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 15
-  - sprite: {fileID: -865313968, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 16
-  - sprite: {fileID: 254470818, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 17
-  - sprite: {fileID: 1364074267, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 18
-  - sprite: {fileID: 725129967, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 19
-  <remainingCards>k__BackingField:
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: f66f4480ed57498498b92ef94fe43194, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fca0bd49afd7a6346898e37abbc18d36, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: df27ed17eeef20d43b87bb920cefda07, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 1
       AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ca7d1ca4a43645449b9ca4c484374c63, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 2
       AbilityStates: 0
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 62d5bf017829e784badd88a772eb44a6, type: 3}
+    <type>k__BackingField: 0
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 3
+      AbilityStates: 0
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 52cf61a151884ce47bc4f98ec83a954f, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 1
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 3fe3cc8e24c5f9141a3e6d53f9820303, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 20
       AbilityStates: 20
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: ce12e5e5e19ce8a4da93c55d6ceaadc7, type: 3}
+    <type>k__BackingField: 1
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 40
       AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: fc1f2e92542733842acf51aedb1020b4, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 5
+    <Ability>k__BackingField:
+      type: 2
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2ec4404e7dd33ed4f8285e04937cbd8d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 3
+      RepNumber: 20
       AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 4ccfe41da9c686042b39ab88f95e4c3d, type: 3}
+    <type>k__BackingField: 2
+    <cost>k__BackingField: 20
+    <Ability>k__BackingField:
+      type: 4
+      RepNumber: 40
       AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: 2045199325, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 20
-  - sprite: {fileID: 1981048027, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 21
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
-  - sprite: {fileID: -406340474, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1252397000, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 0
-    Ability:
-      AbilityStates: 0
-  - sprite: {fileID: -1171544082, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 22
-  - sprite: {fileID: -1402505870, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 23
-  - sprite: {fileID: -435657979, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 24
-  - sprite: {fileID: 644239097, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 1
-    Ability:
-      AbilityStates: 25
-  - sprite: {fileID: 1366065722, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 26
-  - sprite: {fileID: -1743935353, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 27
-  - sprite: {fileID: 1857731889, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 28
-  - sprite: {fileID: 99642156, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 29
-  - sprite: {fileID: -1761841557, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 30
-  - sprite: {fileID: 755261231, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 31
-  - sprite: {fileID: -1073799441, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 32
-  - sprite: {fileID: -238044232, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 33
-  - sprite: {fileID: -916243957, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 34
-  - sprite: {fileID: -2110935070, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 35
-  - sprite: {fileID: -1928609678, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 36
-  - sprite: {fileID: 2092005510, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 37
-  - sprite: {fileID: 770852708, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 2
-    Ability:
-      AbilityStates: 38
-  - sprite: {fileID: -315910213, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 39
-  - sprite: {fileID: 1416292639, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 40
-  - sprite: {fileID: -407098567, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 41
-  - sprite: {fileID: 14734834, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 42
-  - sprite: {fileID: -176053653, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 43
-  - sprite: {fileID: -638760599, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 44
-  - sprite: {fileID: 1497526672, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 45
-  - sprite: {fileID: -1381902931, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 46
-  - sprite: {fileID: 319390511, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 47
-  - sprite: {fileID: -1029611978, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 48
-  - sprite: {fileID: -1699585220, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 49
-  - sprite: {fileID: -738549462, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 50
-  - sprite: {fileID: -1340628006, guid: cb4a55571169f0441ac05153d7d583f9, type: 3}
-    type: 3
-    Ability:
-      AbilityStates: 51
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 5ba50e8e99f64564a8b40df44f240660, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 15
+    <Ability>k__BackingField:
+      type: 5
+      RepNumber: 10
+      AbilityStates: 10
+  - <sprite>k__BackingField: {fileID: 21300000, guid: b4326f897333b674f93ea1ed6e7c8352, type: 3}
+    <type>k__BackingField: 3
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 6
+      RepNumber: 5
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 7062931e19af6b349be905a4ffb9b043, type: 3}
+    <type>k__BackingField: 4
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 7
+      RepNumber: 0
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: c8f65de9b4e81be4d99657490c49b099, type: 3}
+    <type>k__BackingField: 5
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 3
+      AbilityStates: 5
+  - <sprite>k__BackingField: {fileID: 21300000, guid: 2bb4bb2b81f32d7478b097c2ef5ce2b1, type: 3}
+    <type>k__BackingField: 7
+    <cost>k__BackingField: 10
+    <Ability>k__BackingField:
+      type: 0
+      RepNumber: 10
+      AbilityStates: 10
+  <remainingCards>k__BackingField: []
+  <AllCardCount>k__BackingField: 50
   <DeckCount>k__BackingField: 20

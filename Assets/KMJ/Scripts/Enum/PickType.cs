@@ -10,9 +10,7 @@
 public enum PickType
 {
     NORMAL,
-    ADVANCED,
     RARE,
     HERO,
     LEGENDARY,
-    MYTHIC,
 }
